@@ -1249,6 +1249,33 @@
       .ux-c14u7 .steps { font-family:ui-monospace,"Courier New",monospace; font-size:13.5px; line-height:1.75; background:var(--paper); border:1px solid var(--line); border-radius:10px; padding:10px 14px; white-space:pre-wrap; overflow-wrap:break-word; margin:0; }
       .ux-c14u7 .lab-byline { margin:0; text-align:center; color:var(--ink-soft); font-size:13.5px; }
       @media (max-width:720px) { .ux-c14u7 .lab-canvas { height:300px; } }
+/* c15u1 主、客觀機率與古典機率實驗室 專屬樣式 */
+      .ux-c15u1 .lab-eq { margin:0; text-align:center; font-size:17px; font-weight:700; font-variant-numeric:tabular-nums; overflow-wrap:break-word; }
+      .ux-c15u1 .lab-canvas { display:block; width:100%; height:320px; background:var(--paper); border:1px solid var(--line); border-radius:10px; touch-action:none; }
+      .ux-c15u1 .op-btn.active { background:var(--pink); border-color:var(--pink); color:#fff; }
+      .ux-c15u1 .ctl input[type=range] { flex:1 1 auto; min-width:0; accent-color:var(--green); height:30px; margin:0; }
+      .ux-c15u1 .stat { background:var(--chip); border-radius:10px; padding:6px 12px; font-size:14px; font-variant-numeric:tabular-nums; overflow-wrap:break-word; }
+      .ux-c15u1 .steps { font-family:ui-monospace,"Courier New",monospace; font-size:13.5px; line-height:1.75; background:var(--paper); border:1px solid var(--line); border-radius:10px; padding:10px 14px; white-space:pre-wrap; overflow-wrap:break-word; margin:0; }
+      @media (max-width:720px) { .ux-c15u1 .lab-canvas { height:300px; } }
+/* c15u2 條件機率與貝氏定理 專屬樣式 */
+      .ux-c15u2 .lab-eq { margin:0; text-align:center; font-size:17px; font-weight:700; font-variant-numeric:tabular-nums; overflow-wrap:break-word; }
+      .ux-c15u2 .lab-canvas { display:block; width:100%; height:300px; background:var(--paper); border:1px solid var(--line); border-radius:10px; touch-action:none; }
+      .ux-c15u2 .ctl input[type=range] { flex:1 1 auto; min-width:0; accent-color:var(--green); height:30px; margin:0; }
+      .ux-c15u2 .stat { background:var(--chip); border-radius:10px; padding:6px 12px; font-size:14px; font-variant-numeric:tabular-nums; overflow-wrap:break-word; }
+      .ux-c15u2 .steps { font-size:14px; line-height:1.85; background:var(--paper); border:1px solid var(--line); border-radius:10px; padding:10px 14px; overflow-wrap:break-word; margin:0; }
+      .ux-c15u2 .lab-byline { margin:0; text-align:center; color:var(--ink-soft); font-size:13.5px; }
+      @media (max-width:720px) { .ux-c15u2 .lab-canvas { height:280px; } }
+/* c15u3 獨立事件實驗室 專屬樣式 */
+      .ux-c15u3 .lab-eq { margin:0; text-align:center; font-size:17px; font-weight:700; font-variant-numeric:tabular-nums; overflow-wrap:break-word; }
+      .ux-c15u3 .lab-canvas { display:block; width:100%; height:320px; background:var(--paper); border:1px solid var(--line); border-radius:10px; touch-action:none; }
+      .ux-c15u3 .ctl input[type=range] { flex:1 1 auto; min-width:0; accent-color:var(--green); height:30px; margin:0; }
+      .ux-c15u3 .comp-pick { display:flex; flex-wrap:wrap; gap:14px; font-size:14.5px; font-weight:700; }
+      .ux-c15u3 .comp-pick label { display:flex; align-items:center; gap:6px; cursor:pointer; }
+      .ux-c15u3 .comp-pick input { width:18px; height:18px; accent-color:var(--green); }
+      .ux-c15u3 .stat { background:var(--chip); border-radius:10px; padding:6px 12px; font-size:14px; font-variant-numeric:tabular-nums; overflow-wrap:break-word; }
+      .ux-c15u3 .steps { font-family:ui-monospace,"Courier New",monospace; font-size:13.5px; line-height:1.75; background:var(--paper); border:1px solid var(--line); border-radius:10px; padding:10px 14px; white-space:pre-wrap; overflow-wrap:break-word; margin:0; }
+      .ux-c15u3 .lab-byline { margin:0; text-align:center; color:var(--ink-soft); font-size:13.5px; }
+      @media (max-width:720px) { .ux-c15u3 .lab-canvas { height:300px; } }
       /* ---------- 頁尾 ---------- */
       footer {
         margin-top: 56px; background: var(--brand-deep); color: #dcebfb;
@@ -2736,7 +2763,7 @@
           <span class="sec-num">3</span>
           <h2>互動式教學</h2>
         </div>
-        <p class="sec-sub">觀念不要只用背的——動手拉一拉、拖一拖，圖形和數字會自己告訴你答案。一百零二個互動實驗室，依章節分組，手機上也能直接操作。</p>
+        <p class="sec-sub">觀念不要只用背的——動手拉一拉、拖一拖，圖形和數字會自己告訴你答案。一百零五個互動實驗室，依章節分組，手機上也能直接操作。</p>
         <nav class="lab-portal" aria-label="章節快速前往">
           <p class="lab-portal-label">快速前往章節：</p>
           <div class="lab-portal-items">
@@ -2755,7 +2782,7 @@
             <a class="chip lab-portal-link" href="#lab-ch12">第十二章・空間向量（6 個）</a>
             <a class="chip lab-portal-link" href="#lab-ch13">第十三章・空間中的平面與直線（9 個）</a>
             <a class="chip lab-portal-link" href="#lab-ch14">第十四章・矩陣（7 個）</a>
-            <span class="chip lab-portal-soon">第十五章・條件機率（尚未製作）</span>
+            <a class="chip lab-portal-link" href="#lab-ch15">第十五章・條件機率（3 個）</a>
           </div>
         </nav>
 
@@ -6182,6 +6209,142 @@
 <p class="steps" id="c14u7-stepsBox"></p>
 <div class="lab-read" id="c14u7-readOut"></div>
 <p class="lab-tip" id="c14u7-tipBox"></p>
+<p class="lab-byline">李向宇老師製作</p>
+<p class="lab-byline">李向宇老師製作</p>
+</div>
+</article>
+        </div>
+        <h3 class="lab-group-title" id="lab-ch15">第十五章・條件機率</h3>
+        <div class="grid">
+<!-- c15u1 主、客觀機率與古典機率實驗室 -->
+<article class="card lab-card ux-c15u1">
+<div class="card-body">
+
+<h3>主、客觀機率與古典機率實驗室</h3>
+<div class="chips"><span class="chip">第十五章・條件機率</span><span class="chip">焦點 15-1 機率的意義</span></div>
+<div class="seg" role="group" aria-label="選擇模式">
+<button type="button" class="seg-btn active" data-c15u1-mode="subj">主觀機率</button>
+<button type="button" class="seg-btn" data-c15u1-mode="freq">客觀機率（頻率機率）</button>
+<button type="button" class="seg-btn" data-c15u1-mode="prop">客觀機率的性質</button>
+<button type="button" class="seg-btn" data-c15u1-mode="note">客觀機率的說明</button>
+<button type="button" class="seg-btn" data-c15u1-mode="class">古典機率</button>
+<button type="button" class="seg-btn" data-c15u1-mode="range">古典機率的範圍</button>
+</div>
+<div class="seg" role="group" aria-label="情境選擇" id="c15u1-opNote" style="display:none">
+<button type="button" class="seg-btn op-btn" data-c15u1-choice="1">(1) 算命師斷言發財</button>
+<button type="button" class="seg-btn op-btn active" data-c15u1-choice="2">(2) 氣象局下雨機率</button>
+<button type="button" class="seg-btn op-btn" data-c15u1-choice="3">(3) 球迷直覺勝率</button>
+</div>
+<div class="seg" role="group" aria-label="條件選擇" id="c15u1-opCmp" style="display:none">
+<button type="button" class="seg-btn op-btn active" data-c15u1-cmp="gt">編號大於 t</button>
+<button type="button" class="seg-btn op-btn" data-c15u1-cmp="lt">編號小於 t</button>
+</div>
+<p class="lab-eq" id="c15u1-eqLine"></p>
+<canvas class="lab-canvas" id="c15u1-cvSec" width="640" height="320" aria-label="機率示意圖"></canvas>
+<div class="lab-controls" id="c15u1-ctlSubj">
+<label class="ctl"><span class="ctl-name">球迷說的勝率 =</span><input type="range" id="c15u1-rgSubj" min="0" max="100" step="1" value="80"><span class="ctl-val" id="c15u1-valSubj">80%</span></label>
+</div>
+<div class="lab-controls" id="c15u1-ctlFreq" style="display:none">
+<label class="ctl"><span class="ctl-name">試驗次數 n =</span><input type="range" id="c15u1-rgN" min="10" max="1000" step="10" value="200"><span class="ctl-val" id="c15u1-valN">200</span></label>
+<label class="ctl"><span class="ctl-name">正面次數 k =</span><input type="range" id="c15u1-rgK" min="0" max="1000" step="1" value="96"><span class="ctl-val" id="c15u1-valK">96</span></label>
+</div>
+<div class="lab-controls" id="c15u1-ctlProp" style="display:none">
+<label class="ctl"><span class="ctl-name">甲正面次數 =</span><input type="range" id="c15u1-rgA" min="0" max="10" step="1" value="7"><span class="ctl-val" id="c15u1-valA">7</span></label>
+<label class="ctl"><span class="ctl-name">乙正面次數 =</span><input type="range" id="c15u1-rgB" min="0" max="1000" step="1" value="512"><span class="ctl-val" id="c15u1-valB">512</span></label>
+</div>
+<div class="lab-controls" id="c15u1-ctlNote" style="display:none">
+<label class="ctl"><span class="ctl-name">氣象局下雨機率 =</span><input type="range" id="c15u1-rgRain" min="0" max="100" step="1" value="70"><span class="ctl-val" id="c15u1-valRain">70%</span></label>
+</div>
+<div class="lab-controls" id="c15u1-ctlClass" style="display:none">
+<label class="ctl"><span class="ctl-name">有利結果個數 =</span><input type="range" id="c15u1-rgFav" min="0" max="6" step="1" value="3"><span class="ctl-val" id="c15u1-valFav">3</span></label>
+</div>
+<div class="lab-controls" id="c15u1-ctlRange" style="display:none">
+<label class="ctl"><span class="ctl-name">門檻 t =</span><input type="range" id="c15u1-rgT" min="1" max="7" step="1" value="6"><span class="ctl-val" id="c15u1-valT">6</span></label>
+</div>
+<div class="seg"><button type="button" class="seg-btn" id="c15u1-btnCard">回到字卡例</button></div>
+<p class="steps" id="c15u1-stepsBox"></p>
+<div class="lab-read" id="c15u1-readOut"></div>
+<p class="lab-tip" id="c15u1-tipBox"></p>
+<p class="lab-byline">李向宇老師製作</p>
+</div>
+</article>
+<!-- c15u2 條件機率與貝氏定理 -->
+<article class="card lab-card ux-c15u2">
+<div class="card-body">
+<h3>條件機率與貝氏定理</h3>
+<div class="chips"><span class="chip">第十五章・條件機率</span><span class="chip">焦點 2・條件機率與貝氏定理</span></div>
+<p class="sub-head">條件機率與貝氏定理實驗室</p>
+
+
+<div class="seg" role="group" aria-label="選擇模式">
+<button type="button" class="seg-btn active" data-c15u2-mode="def">條件機率的定義</button>
+<button type="button" class="seg-btn" data-c15u2-mode="prop1">性質（一）</button>
+<button type="button" class="seg-btn" data-c15u2-mode="prop2">性質（二）</button>
+<button type="button" class="seg-btn" data-c15u2-mode="mult">乘法原理</button>
+<button type="button" class="seg-btn" data-c15u2-mode="part">分割</button>
+<button type="button" class="seg-btn" data-c15u2-mode="bayes2">貝氏定理（兩部分）</button>
+<button type="button" class="seg-btn" data-c15u2-mode="bayesG">貝氏定理（一般式）</button>
+</div>
+<p class="lab-eq" id="c15u2-eqLine"></p>
+<canvas class="lab-canvas" id="c15u2-cvBayes" aria-label="條件機率示意圖"></canvas>
+<div class="lab-controls">
+<label class="ctl"><span class="ctl-name">n(B)（條件事件個數）=</span><input type="range" id="c15u2-rgB" min="1" max="6" step="1" value="3"><span class="ctl-val" id="c15u2-valB">3</span></label>
+<label class="ctl"><span class="ctl-name">n(A∩B)（交集個數）=</span><input type="range" id="c15u2-rgAB" min="0" max="6" step="1" value="1"><span class="ctl-val" id="c15u2-valAB">1</span></label>
+<label class="ctl"><span class="ctl-name">P(A|C) =</span><input type="range" id="c15u2-rgP1" min="0" max="1" step="0.05" value="0.4"><span class="ctl-val" id="c15u2-valP1">0.4</span></label>
+<label class="ctl"><span class="ctl-name">P(A|C)（性質二）=</span><input type="range" id="c15u2-rgP2" min="0" max="1" step="0.05" value="0.4"><span class="ctl-val" id="c15u2-valP2">0.4</span></label>
+<label class="ctl"><span class="ctl-name">P(B|C) =</span><input type="range" id="c15u2-rgQ2" min="0" max="1" step="0.05" value="0.5"><span class="ctl-val" id="c15u2-valQ2">0.5</span></label>
+<label class="ctl"><span class="ctl-name">P(A∩B|C) =</span><input type="range" id="c15u2-rgR2" min="0" max="0.4" step="0.05" value="0.2"><span class="ctl-val" id="c15u2-valR2">0.2</span></label>
+<label class="ctl"><span class="ctl-name">紅球數 =</span><input type="range" id="c15u2-rgRed" min="1" max="5" step="1" value="3"><span class="ctl-val" id="c15u2-valRed">3</span></label>
+<label class="ctl"><span class="ctl-name">白球數 =</span><input type="range" id="c15u2-rgWhite" min="1" max="5" step="1" value="2"><span class="ctl-val" id="c15u2-valWhite">2</span></label>
+<label class="ctl"><span class="ctl-name">切點一（A1 到此為止）=</span><input type="range" id="c15u2-rgC1" min="1" max="4" step="1" value="2"><span class="ctl-val" id="c15u2-valC1">2</span></label>
+<label class="ctl"><span class="ctl-name">切點二（A2 到此為止）=</span><input type="range" id="c15u2-rgC2" min="3" max="5" step="1" value="4"><span class="ctl-val" id="c15u2-valC2">4</span></label>
+<label class="ctl"><span class="ctl-name">盛行率 P(A) =</span><input type="range" id="c15u2-rgPrev" min="0.001" max="0.1" step="0.001" value="0.01"><span class="ctl-val" id="c15u2-valPrev">0.01</span></label>
+<label class="ctl"><span class="ctl-name">靈敏度 P(陽性|有病) =</span><input type="range" id="c15u2-rgSens" min="0.5" max="1" step="0.01" value="0.99"><span class="ctl-val" id="c15u2-valSens">0.99</span></label>
+<label class="ctl"><span class="ctl-name">偽陽性率 P(陽性|無病) =</span><input type="range" id="c15u2-rgFpr" min="0" max="0.2" step="0.01" value="0.05"><span class="ctl-val" id="c15u2-valFpr">0.05</span></label>
+<label class="ctl"><span class="ctl-name">甲機不良率 =</span><input type="range" id="c15u2-rgDA" min="0" max="0.05" step="0.005" value="0.01"><span class="ctl-val" id="c15u2-valDA">0.01</span></label>
+<label class="ctl"><span class="ctl-name">乙機不良率 =</span><input type="range" id="c15u2-rgDB" min="0" max="0.05" step="0.005" value="0.02"><span class="ctl-val" id="c15u2-valDB">0.02</span></label>
+<label class="ctl"><span class="ctl-name">丙機不良率 =</span><input type="range" id="c15u2-rgDC" min="0" max="0.05" step="0.005" value="0.03"><span class="ctl-val" id="c15u2-valDC">0.03</span></label>
+</div>
+<div class="lab-read" id="c15u2-readOut"></div>
+<p class="steps" id="c15u2-stepsBox"></p>
+<p class="lab-tip" id="c15u2-tipBox"></p>
+<p class="lab-byline">李向宇老師製作</p>
+<p class="lab-byline">李向宇老師製作</p>
+</div>
+</article>
+<!-- c15u3 獨立事件實驗室 -->
+<article class="card lab-card ux-c15u3">
+<div class="card-body">
+
+<h3>獨立事件實驗室</h3>
+<div class="chips"><span class="chip">第十五章・條件機率</span><span class="chip">焦點 3・獨立事件</span></div>
+<div class="seg" role="group" aria-label="選擇模式">
+<button type="button" class="seg-btn active" data-c15u3-mode="def">獨立事件的定義</button>
+<button type="button" class="seg-btn" data-c15u3-mode="cond">獨立的充要條件</button>
+<button type="button" class="seg-btn" data-c15u3-mode="comp">獨立的性質（兩事件）</button>
+<button type="button" class="seg-btn" data-c15u3-mode="three">三事件獨立的性質</button>
+<button type="button" class="seg-btn" data-c15u3-mode="mutex">互斥事件</button>
+<button type="button" class="seg-btn" data-c15u3-mode="diff">獨立與互斥的區別</button>
+<button type="button" class="seg-btn" data-c15u3-mode="app">應用：至少發生一次</button>
+</div>
+<p class="lab-eq" id="c15u3-eqLine"></p>
+<canvas class="lab-canvas" id="c15u3-cvInd" aria-label="獨立與互斥機率示意圖"></canvas>
+<div class="lab-controls">
+<label class="ctl"><span class="ctl-name">P(A) =</span><input type="range" id="c15u3-rgA" min="0.05" max="0.95" step="0.05" value="0.5"><span class="ctl-val" id="c15u3-valA">0.5</span></label>
+<label class="ctl"><span class="ctl-name">P(B) =</span><input type="range" id="c15u3-rgB" min="0.05" max="0.95" step="0.05" value="0.3"><span class="ctl-val" id="c15u3-valB">0.3</span></label>
+<label class="ctl"><span class="ctl-name">P(A∩B) =</span><input type="range" id="c15u3-rgP" min="0" max="0.9" step="0.05" value="0.15"><span class="ctl-val" id="c15u3-valP">0.15</span></label>
+<label class="ctl"><span class="ctl-name">P(C) =</span><input type="range" id="c15u3-rgC" min="0.05" max="0.95" step="0.05" value="0.5"><span class="ctl-val" id="c15u3-valC">0.5</span></label>
+<label class="ctl"><span class="ctl-name">次數 n =</span><input type="range" id="c15u3-rgN" min="1" max="5" step="1" value="2"><span class="ctl-val" id="c15u3-valN">2</span></label>
+</div>
+<div class="comp-pick" id="c15u3-compPick">
+<span>三事件模式：勾選表示取餘事件</span>
+<label><input type="checkbox" id="c15u3-cbA" checked> A 取餘事件</label>
+<label><input type="checkbox" id="c15u3-cbB"> B 取餘事件</label>
+<label><input type="checkbox" id="c15u3-cbC" checked> C 取餘事件</label>
+</div>
+<p class="steps" id="c15u3-stepsBox"></p>
+<div class="lab-read" id="c15u3-readOut"></div>
+<p class="lab-tip" id="c15u3-tipBox"></p>
 <p class="lab-byline">李向宇老師製作</p>
 <p class="lab-byline">李向宇老師製作</p>
 </div>
@@ -42708,6 +42871,1105 @@ function mat2FracML(a, b, c, d) {
   var rzT = null;
   window.addEventListener("resize", function () { clearTimeout(rzT); rzT = setTimeout(draw, 120); });
   update();
+})();
+  })();
+
+  /* ===== c15u1 主、客觀機率與古典機率實驗室 ===== */
+  (function () {
+"use strict";
+function el(id) { return document.getElementById(id); }
+function fmt(n, d) {
+  if (d === undefined) d = 3;
+  if (!isFinite(n)) return "∞";
+  var s = n.toFixed(d);
+  if (s.indexOf(".") !== -1) s = s.replace(/0+$/, "").replace(/\.$/, "");
+  if (s === "-0") s = "0";
+  return s.replace(/-/g, "−");
+}
+function gcd(a, b) { a = Math.abs(a); b = Math.abs(b); while (b) { var t = a % b; a = b; b = t; } return a || 1; }
+function mkFrac(n, d) {
+  if (d === undefined) d = 1;
+  if (d < 0) { n = -n; d = -d; }
+  var g = gcd(n, d);
+  return { n: n / g, d: d / g };
+}
+function fracStr(a) { return a.d === 1 ? String(a.n) : a.n + "/" + a.d; }
+function fracML(a) {
+  if (a.d === 1) return "<mn>" + String(a.n).replace(/-/g, "−") + "</mn>";
+  return "<mfrac><mn>" + String(a.n).replace(/-/g, "−") + "</mn><mn>" + a.d + "</mn></mfrac>";
+}
+function numML(n) { return "<mn>" + fmt(n) + "</mn>"; }
+function wrapMath(inner) { return "<math><mrow>" + inner + "</mrow></math>"; }
+function stat(label, mathInner, hot) {
+  return '<span class="stat' + (hot ? " hot" : "") + '"><b>' + label + "</b>" + wrapMath(mathInner) + "</span>";
+}
+function pctML(v) { return "<mn>" + v + "</mn><mo>%</mo>"; }
+var state = { mode: "subj", choice: "2", cmp: "gt" };
+
+function renderSubj() {
+  var p = parseInt(el("c15u1-rgSubj").value, 10);
+  el("c15u1-valSubj").textContent = p + "%";
+  el("c15u1-eqLine").innerHTML = wrapMath("<mi>P</mi><mo>(</mo><mi>主</mi><mi>隊</mi><mi>勝</mi><mo>)</mo><mo>=</mo>" + pctML(p));
+  el("c15u1-stepsBox").innerHTML =
+    "字卡例（已驗算）：某球迷憑直覺說「主隊今天贏球的機率是 80%。」\n" +
+    "沒有試驗或統計資料，只憑個人感覺判斷，是主觀機率。\n" +
+    "目前：球迷說主隊勝率 " + p + "%，同樣沒有試驗資料，仍是主觀機率。\n" +
+    "定義：缺乏調查或試驗資料時，依過去的經驗、直覺、預感等主觀判斷\n" +
+    "所得的機率，如依賴軼事、個人感覺。\n" +
+    "目前：" + wrapMath("<mi>P</mi><mo>(</mo><mi>主</mi><mi>隊</mi><mi>勝</mi><mo>)</mo><mo>=</mo>" + pctML(p));
+  el("c15u1-readOut").innerHTML =
+    stat("主觀機率", pctML(p), true) +
+    stat("依據", "<mi>直</mi><mi>覺</mi><mo>、</mo><mi>經</mi><mi>驗</mi>") +
+    stat("統計資料", "<mi>無</mi>");
+  el("c15u1-tipBox").innerHTML = "<b>觀念提示：</b>沒有試驗或統計資料、只憑感覺說的數字就是主觀機率；同一個人換個心情，數字可能就變了。";
+  draw();
+}
+
+function renderFreq() {
+  var n = parseInt(el("c15u1-rgN").value, 10), k = parseInt(el("c15u1-rgK").value, 10);
+  el("c15u1-valN").textContent = String(n);
+  el("c15u1-valK").textContent = String(k);
+  var kEff = Math.min(k, n);
+  var f = mkFrac(kEff, n);
+  var dec = kEff / n;
+  el("c15u1-eqLine").innerHTML = wrapMath("<mi>P</mi><mo>(</mo><mi>正</mi><mi>面</mi><mo>)</mo><mo>=</mo>") + " " + wrapMath("<mfrac><mn>" + kEff + "</mn><mn>" + n + "</mn></mfrac><mo>=</mo>" + fracML(f) + "<mo>=</mo>" + numML(dec));
+  var steps = "字卡例（已驗算）：投擲一枚硬幣 200 次，正面出現 96 次，\n" +
+    "客觀機率＝96/200＝12/25＝0.48。\n" +
+    "目前：試驗 " + n + " 次，正面 " + kEff + " 次，客觀機率＝" + kEff + "/" + n + "＝" + fracStr(f) + "＝" + fmt(dec) + "。\n";
+  if (k > n) steps += "注意：正面次數不可超過試驗次數，這裡取 k = n = " + n + " 計算。\n";
+  steps += "定義：相同條件下重複試驗 n 次，事件 A 出現 k 次，\n" +
+    "則以事件發生的頻率 k/n 作為事件 A 的客觀機率。\n" +
+    "目前：" + wrapMath("<mi>P</mi><mo>(</mo><mi>正</mi><mi>面</mi><mo>)</mo><mo>=</mo><mfrac><mn>" + kEff + "</mn><mn>" + n + "</mn></mfrac><mo>=</mo>" + fracML(f) + "<mo>=</mo>" + numML(dec));
+  el("c15u1-stepsBox").innerHTML = steps;
+  el("c15u1-readOut").innerHTML =
+    stat("試驗次數 n", numML(n)) +
+    stat("正面次數 k", numML(kEff)) +
+    stat("客觀機率", "<mfrac><mn>" + kEff + "</mn><mn>" + n + "</mn></mfrac><mo>=</mo>" + fracML(f) + "<mo>=</mo>" + numML(dec), true);
+  el("c15u1-tipBox").innerHTML = "<b>觀念提示：</b>客觀機率就是「出現次數 ÷ 試驗次數」；試驗次數愈多，這個頻率通常愈接近真正的機率。";
+  draw();
+}
+
+function renderProp() {
+  var a = parseInt(el("c15u1-rgA").value, 10), b = parseInt(el("c15u1-rgB").value, 10);
+  el("c15u1-valA").textContent = String(a);
+  el("c15u1-valB").textContent = String(b);
+  var p1 = a / 10, p2 = b / 1000;
+  var diff = Math.abs(p1 - p2);
+  el("c15u1-eqLine").innerHTML = wrapMath("<mi>甲</mi><mo>:</mo><mfrac><mn>" + a + "</mn><mn>10</mn></mfrac><mo>=</mo>" + numML(p1) + "<mo>;</mo><mi>乙</mi><mo>:</mo><mfrac><mn>" + b + "</mn><mn>1000</mn></mfrac><mo>=</mo>" + numML(p2));
+  el("c15u1-stepsBox").innerHTML =
+    "字卡例（已驗算）：甲投硬幣 10 次，正面 7 次；乙投 1000 次，正面 512 次。\n" +
+    "甲：7/10＝0.7；乙：512/1000＝0.512。兩人算出的正面機率不同。\n" +
+    "目前：甲 " + a + "/10＝" + fmt(p1) + "；乙 " + b + "/1000＝" + fmt(p2) + "；兩者相差 " + fmt(diff) + "。\n" +
+    "性質：客觀機率由多次試驗統計而來，數值會隨試驗次數或調查數據不同\n" +
+    "而改變，並非固定不變的數值；次數愈多通常愈接近真實機率。\n" +
+    "距真實機率 1/2：甲 |" + fmt(p1) + " − 0.5|＝" + fmt(Math.abs(p1 - 0.5)) + "；乙 |" + fmt(p2) + " − 0.5|＝" + fmt(Math.abs(p2 - 0.5)) + "。\n" +
+    "目前：" + wrapMath("<mi>甲</mi><mo>=</mo>" + numML(p1) + "<mo>,</mo><mi>乙</mi><mo>=</mo>" + numML(p2) + "<mo>,</mo><mi>差</mi><mo>=</mo>" + numML(diff));
+  el("c15u1-readOut").innerHTML =
+    stat("甲的機率", numML(p1)) +
+    stat("乙的機率", numML(p2), true) +
+    stat("兩者相差", numML(diff)) +
+    stat("真實機率", "<mfrac><mn>1</mn><mn>2</mn></mfrac>");
+  el("c15u1-tipBox").innerHTML = "<b>觀念提示：</b>客觀機率不是固定值，試驗次數一換、頻率就跟著變；次數愈多，頻率離真實機率通常愈近。";
+  draw();
+}
+
+function renderNote() {
+  var rain = parseInt(el("c15u1-rgRain").value, 10);
+  el("c15u1-valRain").textContent = rain + "%";
+  var ch = state.choice;
+  var verdict, basis, eqInner, stepsHead;
+  if (ch === "1") {
+    verdict = "主觀機率"; basis = "算命師的斷言，沒有統計資料";
+    eqInner = "<mi>P</mi><mo>(</mo><mi>發</mi><mi>財</mi><mo>)</mo><mo>=</mo>" + pctML(90);
+    stepsHead = "目前選 (1)：算命師斷言「你今年有九成會發財」，P(發財)＝90%，\n沒有統計資料作為依據，是主觀機率。\n";
+  } else if (ch === "2") {
+    verdict = "客觀機率"; basis = "氣象局依統計資料發布";
+    eqInner = "<mi>P</mi><mo>(</mo><mi>下</mi><mi>雨</mi><mo>)</mo><mo>=</mo>" + pctML(rain);
+    stepsHead = "目前選 (2)：氣象局依統計資料發布下雨機率 " + rain + "%，\n有統計依據，是客觀機率。\n";
+  } else {
+    verdict = "主觀機率"; basis = "球迷的直覺，沒有統計資料";
+    eqInner = "<mi>P</mi><mo>(</mo><mi>主</mi><mi>隊</mi><mi>勝</mi><mo>)</mo><mo>=</mo>" + pctML(80);
+    stepsHead = "目前選 (3)：球迷直覺主隊勝率八成，P(主隊勝)＝80%，\n沒有統計資料作為依據，是主觀機率。\n";
+  }
+  el("c15u1-eqLine").innerHTML = wrapMath(eqInner);
+  el("c15u1-stepsBox").innerHTML =
+    "字卡例（已驗算）：下列何者是客觀機率？\n" +
+    "(1) 算命師斷言你今年有九成會發財；(2) 氣象局依統計資料發布下雨機率 70%；\n" +
+    "(3) 球迷直覺主隊勝率八成。答：只有 (2) 有統計資料作為依據；(1)(3) 都是主觀機率。\n" +
+    stepsHead +
+    "說明：客觀機率強調統計、實驗與數學測量的經驗證據，比主觀機率更準確；\n" +
+    "常用於氣象預報、金融投資、商業決策等。\n" +
+    "目前：" + wrapMath(eqInner) + "　" + verdict;
+  el("c15u1-readOut").innerHTML =
+    stat("判斷", ch === "2" ? "<mi>客</mi><mi>觀</mi><mi>機</mi><mi>率</mi>" : "<mi>主</mi><mi>觀</mi><mi>機</mi><mi>率</mi>", true) +
+    stat("機率", eqInner) +
+    stat("依據", ch === "2" ? "<mi>統</mi><mi>計</mi><mi>資</mi><mi>料</mi>" : "<mi>直</mi><mi>覺</mi><mo>、</mo><mi>斷</mi><mi>言</mi>");
+  el("c15u1-tipBox").innerHTML = "<b>觀念提示：</b>分主客觀就看一句話——有沒有統計或試驗資料撐著；有資料就是客觀，沒資料就是主觀。";
+  draw();
+}
+
+function renderClass() {
+  var k = parseInt(el("c15u1-rgFav").value, 10);
+  el("c15u1-valFav").textContent = String(k);
+  var f = mkFrac(k, 6);
+  el("c15u1-eqLine").innerHTML = wrapMath("<mi>P</mi><mo>(</mo><mi>A</mi><mo>)</mo><mo>=</mo><mfrac><mrow><mi>n</mi><mo>(</mo><mi>A</mi><mo>)</mo></mrow><mrow><mi>n</mi><mo>(</mo><mi>U</mi><mo>)</mo></mrow></mfrac><mo>=</mo><mfrac><mn>" + k + "</mn><mn>6</mn></mfrac><mo>=</mo>" + fracML(f));
+  el("c15u1-stepsBox").innerHTML =
+    "字卡例（已驗算）：擲一顆公正骰子一次，求出現偶數點的機率。\n" +
+    "n(U)＝6，偶數點 2、4、6 共 3 個，故 P(A)＝3/6＝1/2。\n" +
+    "目前：樣本空間 U 有 6 個元素，事件 A 有 " + k + " 個元素，\n" +
+    "P(A)＝n(A)/n(U)＝" + k + "/6＝" + fracStr(f) + "。\n" +
+    "定義：樣本空間 U 有 n 個元素、事件 A 有 k 個元素，且每個元素出現機會均等時，\n" +
+    "P(A)＝n(A)/n(U)＝k/n。\n" +
+    "目前：" + wrapMath("<mi>P</mi><mo>(</mo><mi>A</mi><mo>)</mo><mo>=</mo><mfrac><mn>" + k + "</mn><mn>6</mn></mfrac><mo>=</mo>" + fracML(f));
+  el("c15u1-readOut").innerHTML =
+    stat("n(U)", "<mi>n</mi><mo>(</mo><mi>U</mi><mo>)</mo><mo>=</mo><mn>6</mn>") +
+    stat("n(A)", "<mi>n</mi><mo>(</mo><mi>A</mi><mo>)</mo><mo>=</mo>" + numML(k)) +
+    stat("P(A)", "<mi>P</mi><mo>(</mo><mi>A</mi><mo>)</mo><mo>=</mo>" + fracML(f), true);
+  el("c15u1-tipBox").innerHTML = "<b>觀念提示：</b>古典機率就是「有利個數 ÷ 全部個數」，前提是每個結果出現的機會都均等，骰子要是公正的。";
+  draw();
+}
+
+function renderRange() {
+  var t = parseInt(el("c15u1-rgT").value, 10);
+  el("c15u1-valT").textContent = String(t);
+  var fav = 0;
+  for (var i = 1; i <= 5; i++) {
+    if (state.cmp === "gt" ? i > t : i < t) fav++;
+  }
+  var f = mkFrac(fav, 5);
+  var verdict = fav === 0 ? "不可能事件" : (fav === 5 ? "必然事件" : "一般事件");
+  var condML = state.cmp === "gt" ? "<mi>編</mi><mi>號</mi><mo>&gt;</mo>" + numML(t) : "<mi>編</mi><mi>號</mi><mo>&lt;</mo>" + numML(t);
+  el("c15u1-eqLine").innerHTML = wrapMath("<mi>P</mi><mo>=</mo><mfrac><mn>" + fav + "</mn><mn>5</mn></mfrac><mo>=</mo>" + fracML(f)) + "　" + wrapMath("<mn>0</mn><mo>≤</mo><mi>P</mi><mo>(</mo><mi>A</mi><mo>)</mo><mo>≤</mo><mn>1</mn>");
+  el("c15u1-stepsBox").innerHTML =
+    "字卡例（已驗算）：袋中有 5 顆編號 1～5 的球，任取一球，\n" +
+    "求取到的編號 (1) 大於 6 (2) 小於 6 的機率。\n" +
+    "解：(1) 大於 6 的球有 0 顆，機率＝0/5＝0；(2) 小於 6 的球有 5 顆，機率＝5/5＝1。\n" +
+    "目前：編號" + (state.cmp === "gt" ? "大於 " : "小於 ") + t + " 的球有 " + fav + " 顆，機率＝" + fav + "/5＝" + fracStr(f) + "（" + verdict + "）。\n" +
+    "範圍：n(A)＝0 時 P(A)＝0（不可能事件）；n(A)＝n(U) 時 P(A)＝1（必然事件）。\n" +
+    "故 0 ≤ P(A) ≤ 1。\n" +
+    "目前：" + wrapMath("<mi>P</mi><mo>=</mo><mfrac><mn>" + fav + "</mn><mn>5</mn></mfrac><mo>=</mo>" + fracML(f) + "<mo>,</mo>" + condML);
+  el("c15u1-readOut").innerHTML =
+    stat("條件", condML) +
+    stat("有利個數", "<mi>n</mi><mo>(</mo><mi>A</mi><mo>)</mo><mo>=</mo>" + numML(fav)) +
+    stat("機率", "<mi>P</mi><mo>=</mo>" + fracML(f), true) +
+    stat("判斷", fav === 0 ? "<mi>不</mi><mi>可</mi><mi>能</mi><mi>事</mi><mi>件</mi>" : (fav === 5 ? "<mi>必</mi><mi>然</mi><mi>事</mi><mi>件</mi>" : "<mi>一</mi><mi>般</mi><mi>事</mi><mi>件</mi>"));
+  el("c15u1-tipBox").innerHTML = "<b>觀念提示：</b>機率最小是 0（不可能發生）、最大是 1（一定發生），算出來的機率跑出 0 到 1 之外，一定是算錯了。";
+  draw();
+}
+
+function drawHBar(ctx, x, y, w, h, frac, color, label) {
+  ctx.fillStyle = "#e9e2cf";
+  ctx.fillRect(x, y, w, h);
+  ctx.fillStyle = color;
+  ctx.fillRect(x, y, Math.max(0, Math.min(1, frac)) * w, h);
+  ctx.strokeStyle = "#c9bfa5"; ctx.lineWidth = 1;
+  ctx.strokeRect(x, y, w, h);
+  ctx.fillStyle = "#22304a"; ctx.font = "bold 14px sans-serif"; ctx.textAlign = "left";
+  ctx.fillText(label, x, y - 8);
+}
+function drawBall(ctx, cx, cy, r, label, filled, color) {
+  ctx.beginPath(); ctx.arc(cx, cy, r, 0, Math.PI * 2);
+  ctx.fillStyle = filled ? color : "#ffffff";
+  ctx.fill();
+  ctx.strokeStyle = filled ? color : "#9aa7bd"; ctx.lineWidth = 2;
+  ctx.stroke();
+  ctx.fillStyle = filled ? "#ffffff" : "#22304a";
+  ctx.font = "bold 18px sans-serif"; ctx.textAlign = "center"; ctx.textBaseline = "middle";
+  ctx.fillText(label, cx, cy + 1);
+  ctx.textBaseline = "alphabetic";
+}
+function draw() {
+  var cv = el("c15u1-cvSec");
+  if (!cv || !cv.width || !cv.height) return;
+  var ctx = cv.getContext("2d");
+  if (!ctx) return;
+  var W = cv.width, H = cv.height;
+  ctx.clearRect(0, 0, W, H);
+  ctx.textBaseline = "alphabetic";
+  if (state.mode === "subj") {
+    var p = parseInt(el("c15u1-rgSubj").value, 10);
+    drawHBar(ctx, 60, 130, 520, 40, p / 100, "#e5487c", "球迷心中的勝率（主觀判斷，沒有試驗資料）");
+    ctx.fillStyle = "#22304a"; ctx.font = "bold 16px sans-serif"; ctx.textAlign = "center";
+    ctx.fillText("主隊勝率 " + p + "%", W / 2, 210);
+    ctx.fillStyle = "#5a6a85"; ctx.font = "14px sans-serif";
+    ctx.fillText("0%", 60, 200);
+    ctx.fillText("100%", 580, 200);
+  } else if (state.mode === "freq") {
+    var n = parseInt(el("c15u1-rgN").value, 10), k = parseInt(el("c15u1-rgK").value, 10);
+    var kEff = Math.min(k, n);
+    drawHBar(ctx, 60, 110, 520, 40, kEff / n, "#1668c4", "正面出現的頻率 k/n ＝ " + fmt(kEff / n));
+    ctx.strokeStyle = "#1d9e75"; ctx.lineWidth = 3;
+    ctx.setLineDash([6, 4]);
+    ctx.beginPath(); ctx.moveTo(60 + 260, 95); ctx.lineTo(60 + 260, 165); ctx.stroke();
+    ctx.setLineDash([]);
+    ctx.fillStyle = "#1d9e75"; ctx.font = "bold 14px sans-serif"; ctx.textAlign = "center";
+    ctx.fillText("真實機率 1/2", 60 + 260, 85);
+    ctx.fillStyle = "#22304a"; ctx.font = "bold 16px sans-serif";
+    ctx.fillText("投 " + n + " 次，正面 " + kEff + " 次", W / 2, 210);
+    ctx.fillStyle = "#5a6a85"; ctx.font = "14px sans-serif";
+    ctx.fillText("次數愈多，頻率通常離 1/2 愈近", W / 2, 240);
+  } else if (state.mode === "prop") {
+    var a = parseInt(el("c15u1-rgA").value, 10), b = parseInt(el("c15u1-rgB").value, 10);
+    drawHBar(ctx, 60, 90, 520, 36, a / 10, "#ef8f14", "甲：投 10 次，正面 " + a + " 次，頻率 " + fmt(a / 10));
+    drawHBar(ctx, 60, 170, 520, 36, b / 1000, "#1668c4", "乙：投 1000 次，正面 " + b + " 次，頻率 " + fmt(b / 1000));
+    ctx.strokeStyle = "#1d9e75"; ctx.lineWidth = 3;
+    ctx.setLineDash([6, 4]);
+    ctx.beginPath(); ctx.moveTo(60 + 260, 75); ctx.lineTo(60 + 260, 220); ctx.stroke();
+    ctx.setLineDash([]);
+    ctx.fillStyle = "#1d9e75"; ctx.font = "bold 14px sans-serif"; ctx.textAlign = "center";
+    ctx.fillText("真實機率 1/2", 60 + 260, 65);
+    ctx.fillStyle = "#22304a"; ctx.font = "bold 15px sans-serif";
+    ctx.fillText("次數不同，頻率就不同；乙的次數多，離 1/2 更近", W / 2, 250);
+  } else if (state.mode === "note") {
+    var rain = parseInt(el("c15u1-rgRain").value, 10);
+    drawHBar(ctx, 60, 110, 520, 40, rain / 100, "#1668c4", "氣象局：依統計資料發布的下雨機率 " + rain + "%");
+    ctx.fillStyle = "#22304a"; ctx.font = "bold 16px sans-serif"; ctx.textAlign = "center";
+    if (state.choice === "2") ctx.fillText("有統計依據 → 客觀機率", W / 2, 200);
+    else if (state.choice === "1") ctx.fillText("算命師斷言 90%：沒有統計資料 → 主觀機率", W / 2, 200);
+    else ctx.fillText("球迷直覺勝率 80%：沒有統計資料 → 主觀機率", W / 2, 200);
+    ctx.fillStyle = "#5a6a85"; ctx.font = "14px sans-serif";
+    ctx.fillText("分主客觀的關鍵：有沒有統計或試驗資料", W / 2, 232);
+  } else if (state.mode === "class") {
+    var k2 = parseInt(el("c15u1-rgFav").value, 10);
+    for (var d = 1; d <= 6; d++) {
+      drawBall(ctx, 70 + (d - 1) * 100, 140, 34, String(d), d <= k2, "#e5487c");
+    }
+    ctx.fillStyle = "#22304a"; ctx.font = "bold 16px sans-serif"; ctx.textAlign = "center";
+    ctx.fillText("樣本空間 U＝{1, 2, 3, 4, 5, 6}，有利結果 " + k2 + " 個", W / 2, 220);
+    ctx.fillStyle = "#5a6a85"; ctx.font = "14px sans-serif";
+    ctx.fillText("字卡例：偶數點 2、4、6 共 3 個，P＝3/6＝1/2", W / 2, 250);
+  } else if (state.mode === "range") {
+    var t = parseInt(el("c15u1-rgT").value, 10);
+    var fav = 0;
+    for (var b2 = 1; b2 <= 5; b2++) {
+      var hit = state.cmp === "gt" ? b2 > t : b2 < t;
+      if (hit) fav++;
+      drawBall(ctx, 90 + (b2 - 1) * 115, 140, 34, String(b2), hit, "#1d9e75");
+    }
+    ctx.fillStyle = "#22304a"; ctx.font = "bold 16px sans-serif"; ctx.textAlign = "center";
+    ctx.fillText("袋中有編號 1～5 的球，編號" + (state.cmp === "gt" ? "大於 " : "小於 ") + t + " 的有 " + fav + " 顆", W / 2, 220);
+    ctx.fillStyle = "#5a6a85"; ctx.font = "14px sans-serif";
+    ctx.fillText(fav === 0 ? "有利 0 顆：不可能事件，P＝0" : (fav === 5 ? "有利 5 顆：必然事件，P＝1" : "機率＝" + fav + "/5，介於 0 與 1 之間"), W / 2, 250);
+  }
+}
+
+function showMode(mode) {
+  state.mode = mode;
+  var btns = document.querySelectorAll("[data-c15u1-mode]");
+  for (var k = 0; k < btns.length; k++) {
+    if (btns[k].getAttribute("data-c15u1-mode") === mode) btns[k].classList.add("active");
+    else btns[k].classList.remove("active");
+  }
+  el("c15u1-ctlSubj").style.display = mode === "subj" ? "" : "none";
+  el("c15u1-ctlFreq").style.display = mode === "freq" ? "" : "none";
+  el("c15u1-ctlProp").style.display = mode === "prop" ? "" : "none";
+  el("c15u1-ctlNote").style.display = mode === "note" ? "" : "none";
+  el("c15u1-ctlClass").style.display = mode === "class" ? "" : "none";
+  el("c15u1-ctlRange").style.display = mode === "range" ? "" : "none";
+  el("c15u1-opNote").style.display = mode === "note" ? "" : "none";
+  el("c15u1-opCmp").style.display = mode === "range" ? "" : "none";
+  render();
+}
+function render() {
+  if (state.mode === "subj") renderSubj();
+  else if (state.mode === "freq") renderFreq();
+  else if (state.mode === "prop") renderProp();
+  else if (state.mode === "note") renderNote();
+  else if (state.mode === "class") renderClass();
+  else renderRange();
+}
+function syncChoiceButtons() {
+  var btns = document.querySelectorAll("[data-c15u1-choice]");
+  for (var k = 0; k < btns.length; k++) {
+    if (btns[k].getAttribute("data-c15u1-choice") === state.choice) btns[k].classList.add("active");
+    else btns[k].classList.remove("active");
+  }
+}
+function syncCmpButtons() {
+  var btns = document.querySelectorAll("[data-c15u1-cmp]");
+  for (var k = 0; k < btns.length; k++) {
+    if (btns[k].getAttribute("data-c15u1-cmp") === state.cmp) btns[k].classList.add("active");
+    else btns[k].classList.remove("active");
+  }
+}
+function resetCard() {
+  if (state.mode === "subj") { el("c15u1-rgSubj").value = "80"; }
+  else if (state.mode === "freq") { el("c15u1-rgN").value = "200"; el("c15u1-rgK").value = "96"; }
+  else if (state.mode === "prop") { el("c15u1-rgA").value = "7"; el("c15u1-rgB").value = "512"; }
+  else if (state.mode === "note") { el("c15u1-rgRain").value = "70"; state.choice = "2"; syncChoiceButtons(); }
+  else if (state.mode === "class") { el("c15u1-rgFav").value = "3"; }
+  else { el("c15u1-rgT").value = "6"; state.cmp = "gt"; syncCmpButtons(); }
+  render();
+}
+
+var modeBtns = document.querySelectorAll("[data-c15u1-mode]");
+for (var m = 0; m < modeBtns.length; m++) {
+  modeBtns[m].addEventListener("click", function () { showMode(this.getAttribute("data-c15u1-mode")); });
+}
+var choiceBtns = document.querySelectorAll("[data-c15u1-choice]");
+for (var c = 0; c < choiceBtns.length; c++) {
+  choiceBtns[c].addEventListener("click", function () { state.choice = this.getAttribute("data-c15u1-choice"); syncChoiceButtons(); renderNote(); });
+}
+var cmpBtns = document.querySelectorAll("[data-c15u1-cmp]");
+for (var q = 0; q < cmpBtns.length; q++) {
+  cmpBtns[q].addEventListener("click", function () { state.cmp = this.getAttribute("data-c15u1-cmp"); syncCmpButtons(); renderRange(); });
+}
+el("c15u1-rgSubj").addEventListener("input", renderSubj);
+el("c15u1-rgN").addEventListener("input", renderFreq);
+el("c15u1-rgK").addEventListener("input", renderFreq);
+el("c15u1-rgA").addEventListener("input", renderProp);
+el("c15u1-rgB").addEventListener("input", renderProp);
+el("c15u1-rgRain").addEventListener("input", renderNote);
+el("c15u1-rgFav").addEventListener("input", renderClass);
+el("c15u1-rgT").addEventListener("input", renderRange);
+el("c15u1-btnCard").addEventListener("click", resetCard);
+render();
+  })();
+
+  /* ===== c15u2 條件機率與貝氏定理 ===== */
+  (function () {
+"use strict";
+/* ===== 純數學函數（可單獨測試） ===== */
+function fmt(n, d) {
+  if (d === undefined) d = 4;
+  if (!isFinite(n)) return "∞";
+  var s = n.toFixed(d);
+  if (d > 0) s = s.replace(/0+$/, "").replace(/\.$/, "");
+  if (s === "-0") s = "0";
+  return s.replace(/-/g, "−");
+}
+function fmtNum(n) {
+  if (!isFinite(n)) return "∞";
+  return fmt(n, 4);
+}
+function gcd(a, b) { a = Math.abs(a); b = Math.abs(b); while (b) { var t = a % b; a = b; b = t; } return a || 1; }
+/* ===== /純數學函數 ===== */
+/* ===== MathML 小幫手（只負責顯示，不動數學） ===== */
+var ML = {
+  wrap: function (s) { return '<math>' + s + '</math>'; },
+  mi: function (s) { return '<mi>' + s + '</mi>'; },
+  mn: function (s) { return '<mn>' + String(s) + '</mn>'; },
+  mo: function (s) { return '<mo>' + s + '</mo>'; },
+  row: function (s) { return '<mrow>' + s + '</mrow>'; },
+  sup: function (b, e) { return '<msup>' + b + e + '</msup>'; },
+  sub: function (b, s) { return '<msub>' + b + s + '</msub>'; },
+  frac: function (n, d) { return '<mfrac>' + n + d + '</mfrac>'; }
+};
+function fracML(n, d) {
+  if (d < 0) { n = -n; d = -d; }
+  var g = gcd(Math.round(n), Math.round(d)); n = Math.round(n) / g; d = Math.round(d) / g;
+  if (d === 1) return ML.mn(fmt(n, 0));
+  if (n < 0) return ML.mo("−") + ML.frac(ML.mn(fmt(-n, 0)), ML.mn(fmt(d, 0)));
+  return ML.frac(ML.mn(fmt(n, 0)), ML.mn(fmt(d, 0)));
+}
+function numML(n) { return ML.mn(fmt(n)); }
+function decML(n) { return ML.mn(fmt(n, 4)); }
+function condML(a, b) {
+  return ML.mi("P") + ML.mo("(") + ML.mi(a) + ML.mo("|") + ML.mi(b) + ML.mo(")");
+}
+function condCompML(a, b) {
+  return ML.mi("P") + ML.mo("(") + ML.sup(ML.mi(a), ML.mo("′")) + ML.mo("|") + ML.mi(b) + ML.mo(")");
+}
+function capML(a, b) { return ML.mi(a) + ML.mo("∩") + ML.mi(b); }
+function cupML(a, b) { return ML.mi(a) + ML.mo("∪") + ML.mi(b); }
+(function () {
+  var S = { mode: "def", nB: 3, nAB: 1, p1: 0.4, p2: 0.4, q2: 0.5, r2: 0.2,
+    red: 3, white: 2, c1: 2, c2: 4, prev: 0.01, sens: 0.99, fpr: 0.05,
+    dA: 0.01, dB: 0.02, dC: 0.03 };
+  var cv = document.getElementById("c15u2-cvBayes");
+  var ctx = null;
+  function el(id) { return document.getElementById(id); }
+  function fit() {
+    var dpr = window.devicePixelRatio || 1;
+    var w = cv.clientWidth, h = cv.clientHeight;
+    if (!w || !h) return null;
+    var W = Math.round(w * dpr), H = Math.round(h * dpr);
+    if (cv.width !== W || cv.height !== H) { cv.width = W; cv.height = H; }
+    ctx = cv.getContext("2d");
+    if (!ctx) return null;
+    ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+    return { w: w, h: h };
+  }
+  function pal() {
+    var cs = getComputedStyle(document.documentElement);
+    function v(n) { return cs.getPropertyValue(n).trim(); }
+    return { ink: v("--ink"), soft: v("--ink-soft"), line: v("--line"), brand: v("--brand"), pink: v("--pink"), orange: v("--orange"), green: v("--green"), violet: v("--violet") };
+  }
+  var TIPS = {
+    def: "條件縮範圍：知道 B 發生，樣本空間就縮成 B，只在 B 裡面數 A 占幾分之幾。",
+    prop1: "在 C 已經發生的世界裡，C 自己一定發生、空事件一定不發生，任何事件的條件機率都在 0 和 1 之間。",
+    prop2: "餘事件的條件機率是 1 減去原來的；聯集的條件機率也要扣掉重複算的交集，跟一般機率一模一樣。",
+    mult: "不放回會改變分母：第一球拿走後，球變少了，第二球的機率要用剩下的球來算。",
+    part: "分割就是把樣本空間切成幾塊不重疊的拼圖：拼起來剛好是全部，兩塊之間沒有重疊。",
+    bayes2: "陽性不代表有病：盛行率很低時，偽陽性的人數會比真陽性多，貝氏定理就是把這兩群人分開比。",
+    bayesG: "分母是所有可能來源的貢獻加總：先算每一台機器「產量 × 不良率」，再看乙占了幾分之幾。"
+  };
+  function stat(label, val, hot) {
+    return '<span class="stat' + (hot ? " hot" : "") + '"><b>' + label + "</b>" + val + "</span>";
+  }
+  function bar(x, y, w, h, color) { ctx.fillStyle = color; ctx.fillRect(x, y, w, h); }
+  function draw() {
+    var g = fit(); if (!g) return;
+    var w = g.w, h = g.h, P = pal();
+    ctx.clearRect(0, 0, w, h);
+    ctx.textAlign = "center";
+    if (S.mode === "def") {
+      var n = S.nB, k = S.nAB;
+      var bw = Math.min(64, (w - 40) / 6), gap = 8;
+      var total = 6 * bw + 5 * gap, x0 = (w - total) / 2, y = h * 0.42, r = bw / 2 - 2;
+      ctx.font = 'bold 15px "Noto Sans TC", system-ui, sans-serif';
+      for (var i = 1; i <= 6; i++) {
+        var cx = x0 + (i - 1) * (bw + gap) + bw / 2;
+        var inB = i <= n, inAB = i <= k;
+        ctx.beginPath(); ctx.arc(cx, y, r, 0, 2 * Math.PI);
+        ctx.fillStyle = inAB ? "#fbd3e3" : (inB ? "#d7e8fb" : "#f1ede2");
+        ctx.fill();
+        ctx.strokeStyle = inAB ? P.pink : (inB ? P.brand : P.line); ctx.lineWidth = 2.5; ctx.stroke();
+        ctx.fillStyle = P.ink; ctx.fillText(String(i), cx, y + 5);
+      }
+      ctx.fillStyle = P.brand; ctx.font = '14px "Noto Sans TC", system-ui, sans-serif';
+      ctx.fillText("藍色＝條件事件 B 的 " + n + " 個結果", w / 2, y + r + 26);
+      ctx.fillStyle = P.pink;
+      ctx.fillText("粉紅＝交集 A∩B 的 " + k + " 個結果", w / 2, y + r + 48);
+      ctx.fillStyle = P.soft; ctx.font = '13px "Noto Sans TC", system-ui, sans-serif';
+      ctx.fillText("條件下樣本空間只剩 B，機率＝交集個數 ÷ B 的個數", w / 2, h - 12);
+    } else if (S.mode === "prop1") {
+      var base = h * 0.45, x0b = 30, x1b = w - 30;
+      ctx.strokeStyle = P.line; ctx.lineWidth = 4;
+      ctx.beginPath(); ctx.moveTo(x0b, base); ctx.lineTo(x1b, base); ctx.stroke();
+      ctx.fillStyle = P.green;
+      ctx.beginPath(); ctx.arc(x0b, base, 9, 0, 2 * Math.PI); ctx.fill();
+      ctx.beginPath(); ctx.arc(x1b, base, 9, 0, 2 * Math.PI); ctx.fill();
+      var px = x0b + S.p1 * (x1b - x0b);
+      ctx.fillStyle = P.pink;
+      ctx.beginPath(); ctx.arc(px, base, 11, 0, 2 * Math.PI); ctx.fill();
+      ctx.fillStyle = P.ink; ctx.font = 'bold 14px "Noto Sans TC", system-ui, sans-serif';
+      ctx.fillText("0", x0b, base + 30); ctx.fillText("1", x1b, base + 30);
+      ctx.fillText("P(A|C)＝" + fmt(S.p1), px, base - 22);
+      ctx.fillStyle = P.green; ctx.font = '14px "Noto Sans TC", system-ui, sans-serif';
+      ctx.fillText("左端 0：P(∅|C)＝0　　右端 1：P(C|C)＝1", w / 2, base + 58);
+      ctx.fillStyle = P.soft; ctx.font = '13px "Noto Sans TC", system-ui, sans-serif';
+      ctx.fillText("拉滑桿：粉紅點永遠落在 0 和 1 之間", w / 2, h - 12);
+    } else if (S.mode === "prop2") {
+      var labels = ["P(A|C)", "P(B|C)", "P(A∩B|C)", "P(A∪B|C)"];
+      var vals = [S.p2, S.q2, S.r2, S.p2 + S.q2 - S.r2];
+      var cols = [P.brand, P.violet, P.orange, P.green];
+      var top = 34, bh = 34, step = 52, bx = 120, bw2 = w - 150;
+      ctx.font = '13px "Noto Sans TC", system-ui, sans-serif';
+      for (var j = 0; j < 4; j++) {
+        var yy = top + j * step;
+        ctx.fillStyle = P.ink; ctx.textAlign = "right";
+        ctx.fillText(labels[j], bx - 10, yy + bh / 2 + 5);
+        ctx.textAlign = "left";
+        ctx.fillStyle = "#eee9db"; ctx.fillRect(bx, yy, bw2, bh);
+        bar(bx, yy, Math.max(0, Math.min(1, vals[j])) * bw2, bh, cols[j]);
+        ctx.fillStyle = P.ink;
+        ctx.fillText(fmt(vals[j]), bx + Math.max(0, Math.min(1, vals[j])) * bw2 + 6, yy + bh / 2 + 5);
+      }
+      ctx.fillStyle = P.soft; ctx.textAlign = "center"; ctx.font = '13px "Noto Sans TC", system-ui, sans-serif';
+      ctx.fillText("綠色長條＝藍＋紫 − 橘：聯集要扣掉重複的交集", w / 2, h - 12);
+    } else if (S.mode === "mult") {
+      var tot = S.red + S.white;
+      var r = 20, per = 52, xStart = (w - tot * per) / 2 + per / 2, y2 = h * 0.42;
+      ctx.font = 'bold 14px "Noto Sans TC", system-ui, sans-serif';
+      for (var m = 0; m < tot; m++) {
+        var cx2 = xStart + m * per;
+        var isRed = m < S.red;
+        ctx.beginPath(); ctx.arc(cx2, y2, r, 0, 2 * Math.PI);
+        ctx.fillStyle = isRed ? "#fbd3e3" : "#eef3fb"; ctx.fill();
+        ctx.strokeStyle = isRed ? P.pink : P.brand; ctx.lineWidth = 2.5; ctx.stroke();
+        ctx.fillStyle = P.ink; ctx.fillText(isRed ? "紅" : "白", cx2, y2 + 5);
+      }
+      ctx.fillStyle = P.soft; ctx.font = '14px "Noto Sans TC", system-ui, sans-serif';
+      ctx.fillText("袋中共有 " + tot + " 球：紅 " + S.red + " 顆、白 " + S.white + " 顆", w / 2, y2 + 52);
+      ctx.fillText("不放回連取兩球：第一球拿走後只剩 " + (tot - 1) + " 球", w / 2, y2 + 78);
+      ctx.fillStyle = P.soft; ctx.font = '13px "Noto Sans TC", system-ui, sans-serif';
+      ctx.fillText("兩球都紅＝第一球紅 × 剩下紅球再中", w / 2, h - 12);
+    } else if (S.mode === "part") {
+      var a1 = [], a2 = [], a3 = [];
+      for (var d = 1; d <= 6; d++) {
+        if (d <= S.c1) a1.push(d);
+        if (d > S.c1 && d <= S.c2) a2.push(d);
+        if (d > S.c2) a3.push(d);
+      }
+      var groups = [a1, a2, a3], gcols = [P.brand, P.violet, P.green], gnames = ["A1", "A2", "A3"];
+      var cell = 54, gx0 = (w - 6 * cell) / 2, gy = h * 0.40;
+      ctx.font = 'bold 16px "Noto Sans TC", system-ui, sans-serif';
+      for (var q = 0; q < 6; q++) {
+        var dn = q + 1;
+        var in1 = dn <= S.c1, in2 = dn > S.c1 && dn <= S.c2, in3 = dn > S.c2;
+        var cnt = (in1 ? 1 : 0) + (in2 ? 1 : 0) + (in3 ? 1 : 0);
+        var gi = in1 ? 0 : (in2 ? 1 : 2);
+        var gx = gx0 + q * cell;
+        ctx.fillStyle = gi === 0 ? "#d7e8fb" : (gi === 1 ? "#e8ddf7" : "#d3efe6");
+        ctx.fillRect(gx + 3, gy - 24, cell - 6, 48);
+        ctx.strokeStyle = cnt > 1 ? P.pink : gcols[gi]; ctx.lineWidth = cnt > 1 ? 3.5 : 2; ctx.strokeRect(gx + 3, gy - 24, cell - 6, 48);
+        ctx.fillStyle = P.ink; ctx.fillText(String(dn), gx + cell / 2, gy + 6);
+        if (cnt > 1) { ctx.fillStyle = P.pink; ctx.font = 'bold 12px "Noto Sans TC", system-ui, sans-serif'; ctx.fillText("重疊", gx + cell / 2, gy + 42); ctx.font = 'bold 16px "Noto Sans TC", system-ui, sans-serif'; }
+      }
+      ctx.font = '14px "Noto Sans TC", system-ui, sans-serif';
+      for (var gg = 0; gg < 3; gg++) {
+        ctx.fillStyle = gcols[gg];
+        ctx.fillText(gnames[gg] + "＝{" + (groups[gg].length ? groups[gg].join("、") : "空集合") + "}", w / 2, gy + 62 + gg * 24);
+      }
+      ctx.fillStyle = P.soft; ctx.font = '13px "Noto Sans TC", system-ui, sans-serif';
+      ctx.fillText("六個點數 1～6 被切成三塊，拉切點改切法", w / 2, h - 12);
+    } else if (S.mode === "bayes2") {
+      var N = 10000;
+      var tp = S.prev * S.sens * N, fp = (1 - S.prev) * S.fpr * N;
+      var pos = tp + fp;
+      var bx2 = 40, bw3 = w - 80, by = h * 0.38, bh2 = 44;
+      ctx.fillStyle = "#eee9db"; ctx.fillRect(bx2, by, bw3, bh2);
+      bar(bx2, by, (tp / N) * bw3, bh2, P.brand);
+      bar(bx2 + (tp / N) * bw3, by, (fp / N) * bw3, bh2, P.pink);
+      ctx.fillStyle = P.ink; ctx.font = 'bold 14px "Noto Sans TC", system-ui, sans-serif';
+      ctx.fillText("每 10000 人中呈陽性者：" + fmt(pos, 0) + " 人", w / 2, by - 14);
+      ctx.font = '13px "Noto Sans TC", system-ui, sans-serif';
+      ctx.fillStyle = P.brand;
+      ctx.fillText("真陽性 " + fmt(tp, 0) + " 人", w / 2, by + bh2 + 24);
+      ctx.fillStyle = P.pink;
+      ctx.fillText("偽陽性 " + fmt(fp, 0) + " 人", w / 2, by + bh2 + 46);
+      ctx.fillStyle = P.soft;
+      ctx.fillText("陽性者中真正有病的比例＝藍 ÷（藍＋粉紅）", w / 2, h - 12);
+    } else if (S.mode === "bayesG") {
+      var shares = [0.5, 0.3, 0.2], defs = [S.dA, S.dB, S.dC];
+      var parts = [shares[0] * defs[0], shares[1] * defs[1], shares[2] * defs[2]];
+      var totalDef = parts[0] + parts[1] + parts[2];
+      var bx3 = 40, bw4 = w - 80, by3 = h * 0.38, bh3 = 44;
+      var scale = totalDef > 0 ? bw4 / Math.max(totalDef, 0.03) : 0;
+      var xx = bx3;
+      var pcols = [P.brand, P.pink, P.green], pnames = ["甲", "乙", "丙"];
+      ctx.font = '13px "Noto Sans TC", system-ui, sans-serif';
+      for (var z = 0; z < 3; z++) {
+        var segW = parts[z] * scale;
+        bar(xx, by3, segW, bh3, pcols[z]);
+        ctx.fillStyle = P.ink;
+        ctx.fillText(pnames[z] + " " + fmt(parts[z], 4), xx + segW / 2, by3 - 12);
+        xx += segW;
+      }
+      ctx.fillStyle = P.ink; ctx.font = 'bold 14px "Noto Sans TC", system-ui, sans-serif';
+      ctx.fillText("不良品總占比＝" + fmt(totalDef, 4), w / 2, by3 + bh3 + 28);
+      ctx.fillStyle = P.pink;
+      ctx.fillText("粉紅＝乙的貢獻，來自乙的機率＝粉紅 ÷ 全長", w / 2, by3 + bh3 + 52);
+      ctx.fillStyle = P.soft; ctx.font = '13px "Noto Sans TC", system-ui, sans-serif';
+      ctx.fillText("甲、乙、丙產量占 50%、30%、20%，拉滑桿改各機不良率", w / 2, h - 12);
+    }
+  }
+  function update() {
+    if (S.nAB > S.nB) S.nAB = S.nB;
+    el("c15u2-rgB").value = S.nB; el("c15u2-rgAB").value = S.nAB;
+    el("c15u2-rgP1").value = S.p1; el("c15u2-rgP2").value = S.p2; el("c15u2-rgQ2").value = S.q2; el("c15u2-rgR2").value = S.r2;
+    el("c15u2-rgRed").value = S.red; el("c15u2-rgWhite").value = S.white;
+    el("c15u2-rgC1").value = S.c1; el("c15u2-rgC2").value = S.c2;
+    el("c15u2-rgPrev").value = S.prev; el("c15u2-rgSens").value = S.sens; el("c15u2-rgFpr").value = S.fpr;
+    el("c15u2-rgDA").value = S.dA; el("c15u2-rgDB").value = S.dB; el("c15u2-rgDC").value = S.dC;
+    el("c15u2-valB").textContent = fmt(S.nB, 0);
+    el("c15u2-valAB").textContent = fmt(S.nAB, 0);
+    el("c15u2-valP1").textContent = fmt(S.p1);
+    el("c15u2-valP2").textContent = fmt(S.p2);
+    el("c15u2-valQ2").textContent = fmt(S.q2);
+    el("c15u2-valR2").textContent = fmt(S.r2);
+    el("c15u2-valRed").textContent = fmt(S.red, 0);
+    el("c15u2-valWhite").textContent = fmt(S.white, 0);
+    el("c15u2-valC1").textContent = fmt(S.c1, 0);
+    el("c15u2-valC2").textContent = fmt(S.c2, 0);
+    el("c15u2-valPrev").textContent = fmt(S.prev);
+    el("c15u2-valSens").textContent = fmt(S.sens);
+    el("c15u2-valFpr").textContent = fmt(S.fpr);
+    el("c15u2-valDA").textContent = fmt(S.dA);
+    el("c15u2-valDB").textContent = fmt(S.dB);
+    el("c15u2-valDC").textContent = fmt(S.dC);
+    el("c15u2-tipBox").innerHTML = "<b>觀念提示：</b>" + TIPS[S.mode];
+    if (S.mode === "def") {
+      var p = S.nAB / S.nB;
+      el("c15u2-eqLine").innerHTML = ML.wrap(condML("A", "B") + ML.mo("=") +
+        ML.frac(ML.mi("P") + ML.mo("(") + capML("A", "B") + ML.mo(")"), ML.mi("P") + ML.mo("(") + ML.mi("B") + ML.mo(")")) +
+        ML.mo("=") + ML.frac(ML.mi("n") + ML.mo("(") + capML("A", "B") + ML.mo(")"), ML.mi("n") + ML.mo("(") + ML.mi("B") + ML.mo(")")) +
+        ML.mo("=") + fracML(S.nAB, S.nB) + ML.mo("=") + decML(p));
+      var dlines = [];
+      dlines.push("字卡例：擲一顆公正骰子，已知出現偶數點，求出現 2 點的機率。");
+      dlines.push("解：條件下樣本空間只剩偶數點 2、4、6，其中 2 點只有 1 個，故 " +
+        ML.wrap(condML("A", "B") + ML.mo("=")) + " " + ML.wrap(fracML(1, 3)) + "。");
+      dlines.push("目前 n(B)＝" + ML.wrap(ML.mn(fmt(S.nB, 0))) + "、n(A∩B)＝" + ML.wrap(ML.mn(fmt(S.nAB, 0))) + "，故 " +
+        ML.wrap(condML("A", "B") + ML.mo("=")) + " " + ML.wrap(fracML(S.nAB, S.nB)) + " ＝ " + ML.wrap(decML(p)) + "。");
+      dlines.push("定義：P(B)＞0 時，在 B 發生的假設下，A 發生的機率是 " +
+        ML.wrap(condML("A", "B") + ML.mo("=") + ML.frac(ML.mi("P") + ML.mo("(") + capML("A", "B") + ML.mo(")"), ML.mi("P") + ML.mo("(") + ML.mi("B") + ML.mo(")"))) + "。");
+      el("c15u2-stepsBox").innerHTML = dlines.join("<br>");
+      el("c15u2-readOut").innerHTML =
+        stat(ML.wrap(ML.mi("n") + ML.mo("(") + ML.mi("B") + ML.mo(")")), fmt(S.nB, 0)) +
+        stat(ML.wrap(ML.mi("n") + ML.mo("(") + capML("A", "B") + ML.mo(")")), fmt(S.nAB, 0)) +
+        stat(ML.wrap(condML("A", "B")), fmt(p) + "（＝" + fracStr(S.nAB, S.nB) + "）", true);
+    } else if (S.mode === "prop1") {
+      el("c15u2-eqLine").innerHTML = ML.wrap(ML.mi("P") + ML.mo("(") + ML.mi("∅") + ML.mo("|") + ML.mi("C") + ML.mo(")") + ML.mo("=") + ML.mn("0")) +
+        "，" + ML.wrap(condML("C", "C") + ML.mo("=") + ML.mn("1")) +
+        "，" + ML.wrap(ML.mn("0") + ML.mo("≤") + condML("A", "C") + ML.mo("≤") + ML.mn("1"));
+      var plines = [];
+      plines.push("字卡例：在事件 C 已發生的條件下，求 P(C|C) 與 P(∅|C)。");
+      plines.push("解：C 發生之下，C 必然發生，故 " + ML.wrap(condML("C", "C") + ML.mo("=") + ML.mn("1")) +
+        "；空事件不可能發生，故 " + ML.wrap(ML.mi("P") + ML.mo("(") + ML.mi("∅") + ML.mo("|") + ML.mi("C") + ML.mo(")") + ML.mo("=") + ML.mn("0")) + "。");
+      plines.push("目前 P(A|C)＝" + ML.wrap(decML(S.p1)) + "，落在 0 和 1 之間，符合 " +
+        ML.wrap(ML.mn("0") + ML.mo("≤") + condML("A", "C") + ML.mo("≤") + ML.mn("1")) + "。");
+      plines.push("性質（一）：條件機率仍是機率，空事件 0、必然事件 1，其他事件介於 0 與 1 之間。");
+      el("c15u2-stepsBox").innerHTML = plines.join("<br>");
+      el("c15u2-readOut").innerHTML =
+        stat(ML.wrap(ML.mi("P") + ML.mo("(") + ML.mi("∅") + ML.mo("|") + ML.mi("C") + ML.mo(")")), "0") +
+        stat(ML.wrap(condML("C", "C")), "1") +
+        stat(ML.wrap(condML("A", "C")), fmt(S.p1), true);
+    } else if (S.mode === "prop2") {
+      var comp = 1 - S.p2, uni = S.p2 + S.q2 - S.r2;
+      el("c15u2-eqLine").innerHTML = ML.wrap(condCompML("A", "C") + ML.mo("=") + ML.mn("1") + ML.mo("−") + condML("A", "C")) +
+        "，" + ML.wrap(ML.mi("P") + ML.mo("(") + cupML("A", "B") + ML.mo("|") + ML.mi("C") + ML.mo(")") + ML.mo("=") +
+        condML("A", "C") + ML.mo("+") + condML("B", "C") + ML.mo("−") + ML.mi("P") + ML.mo("(") + capML("A", "B") + ML.mo("|") + ML.mi("C") + ML.mo(")"));
+      var qlines = [];
+      qlines.push("字卡例：已知 P(A|C)＝0.4，求 P(A′|C)。");
+      qlines.push("解：" + ML.wrap(condCompML("A", "C") + ML.mo("=") + ML.mn("1") + ML.mo("−") + condML("A", "C")) +
+        " ＝ 1 − 0.4 ＝ " + ML.wrap(decML(0.6)) + "。");
+      qlines.push("目前 P(A|C)＝" + ML.wrap(decML(S.p2)) + "，故 " +
+        ML.wrap(condCompML("A", "C") + ML.mo("=") + ML.mn("1") + ML.mo("−") + decML(S.p2) + ML.mo("=") + decML(comp)) + "。");
+      qlines.push("目前 P(A∪B|C)＝" + ML.wrap(decML(S.p2) + ML.mo("+") + decML(S.q2) + ML.mo("−") + decML(S.r2) + ML.mo("=") + decML(uni)) + "。");
+      qlines.push("性質（二）：餘事件用 1 減；聯集把兩者相加再扣掉交集，避免重複計算。");
+      el("c15u2-stepsBox").innerHTML = qlines.join("<br>");
+      el("c15u2-readOut").innerHTML =
+        stat(ML.wrap(condCompML("A", "C")), fmt(comp), true) +
+        stat(ML.wrap(ML.mi("P") + ML.mo("(") + cupML("A", "B") + ML.mo("|") + ML.mi("C") + ML.mo(")")), fmt(uni)) +
+        stat(ML.wrap(condML("A", "C")), fmt(S.p2)) +
+        stat(ML.wrap(condML("B", "C")), fmt(S.q2));
+    } else if (S.mode === "mult") {
+      var tot = S.red + S.white;
+      var pFirst = S.red / tot, pSecond = (S.red - 1) / (tot - 1);
+      var pBoth = pFirst * pSecond;
+      var pThree = S.red >= 3 ? pBoth * (S.red - 2) / (tot - 2) : 0;
+      el("c15u2-eqLine").innerHTML = ML.wrap(ML.mi("P") + ML.mo("(") + capML("A", "B") + ML.mo(")") + ML.mo("=") +
+        ML.mi("P") + ML.mo("(") + ML.mi("A") + ML.mo(")") + ML.mo("·") + ML.mi("P") + ML.mo("(") + ML.mi("B") + ML.mo("|") + ML.mi("A") + ML.mo(")")) +
+        " ＝ " + ML.wrap(fracML(S.red, tot) + ML.mo("×") + fracML(S.red - 1, tot - 1) + ML.mo("=") + fracML(S.red * (S.red - 1), tot * (tot - 1)) + ML.mo("=") + decML(pBoth));
+      var mlines = [];
+      mlines.push("字卡例：袋中有 3 顆紅球、2 顆白球，不放回連取兩球，求兩球都是紅球的機率。");
+      mlines.push("解：第一球紅球 " + ML.wrap(fracML(3, 5)) + "，取出後剩 2 紅 2 白，第二球紅球 " +
+        ML.wrap(fracML(2, 4)) + "，故 P＝" + ML.wrap(fracML(3, 5) + ML.mo("×") + fracML(2, 4) + ML.mo("=") + fracML(3, 10)) + "。");
+      mlines.push("目前紅 " + S.red + " 顆、白 " + S.white + " 顆，共 " + tot + " 顆：第一球紅 " +
+        ML.wrap(fracML(S.red, tot)) + "，第二球紅 " + ML.wrap(fracML(S.red - 1, tot - 1)) +
+        "，兩球都紅 " + ML.wrap(fracML(S.red * (S.red - 1), tot * (tot - 1))) + " ＝ " + ML.wrap(decML(pBoth)) + "。");
+      if (S.red >= 3) {
+        mlines.push("推廣三事件：連取三球都紅＝" +
+          ML.wrap(fracML(S.red, tot) + ML.mo("×") + fracML(S.red - 1, tot - 1) + ML.mo("×") + fracML(S.red - 2, tot - 2) + ML.mo("=") + decML(pThree)) +
+          "，即 P(A∩B∩C)＝P(A)·P(B|A)·P(C|A∩B)。");
+      } else {
+        mlines.push("推廣三事件：紅球只有 " + S.red + " 顆，不夠連取三球都紅；紅球調到 3 顆以上就能算 P(A∩B∩C)＝P(A)·P(B|A)·P(C|A∩B)。");
+      }
+      el("c15u2-stepsBox").innerHTML = mlines.join("<br>");
+      el("c15u2-readOut").innerHTML =
+        stat(ML.wrap(ML.mi("P") + ML.mo("(") + ML.mi("第 1 球紅") + ML.mo(")")), fmt(pFirst)) +
+        stat(ML.wrap(ML.mi("P") + ML.mo("(") + ML.mi("第 2 球紅") + ML.mo("|") + ML.mi("第 1 球紅") + ML.mo(")")), fmt(pSecond)) +
+        stat(ML.wrap(ML.mi("P") + ML.mo("(") + ML.mi("兩球都紅") + ML.mo(")")), fmt(pBoth) + "（＝" + fracStr(S.red * (S.red - 1), tot * (tot - 1)) + "）", true);
+    } else if (S.mode === "part") {
+      var a1 = [], a2 = [], a3 = [];
+      for (var d = 1; d <= 6; d++) {
+        if (d <= S.c1) a1.push(d);
+        if (d > S.c1 && d <= S.c2) a2.push(d);
+        if (d > S.c2) a3.push(d);
+      }
+      function setStr(arr) { return "{" + (arr.length ? arr.join("、") : "∅") + "}"; }
+      function inter(a, b) { return a.filter(function (x) { return b.indexOf(x) >= 0; }); }
+      var i12 = inter(a1, a2), i13 = inter(a1, a3), i23 = inter(a2, a3);
+      var unionArr = a1.concat(a2, a3).filter(function (x, idx, arr) { return arr.indexOf(x) === idx; }).sort(function (x, y) { return x - y; });
+      var missing = [1, 2, 3, 4, 5, 6].filter(function (x) { return unionArr.indexOf(x) < 0; });
+      var unionOK = missing.length === 0 && unionArr.length === 6;
+      var disjointOK = i12.length === 0 && i13.length === 0 && i23.length === 0;
+      var isPart = unionOK && disjointOK;
+      el("c15u2-eqLine").innerHTML = ML.wrap(ML.sub(ML.mi("A"), ML.mn("1")) + ML.mo("∪") + ML.sub(ML.mi("A"), ML.mn("2")) + ML.mo("∪") + ML.sub(ML.mi("A"), ML.mn("3")) + ML.mo("=") + ML.mi("S")) +
+        "，" + ML.wrap(ML.sub(ML.mi("A"), ML.mi("i")) + ML.mo("∩") + ML.sub(ML.mi("A"), ML.mi("j")) + ML.mo("=") + ML.mi("∅") + ML.mo("(") + ML.mi("i") + ML.mo("≠") + ML.mi("j") + ML.mo(")"));
+      var tlines = [];
+      tlines.push("字卡例：擲一顆骰子，令 A1＝點數 1、2，A2＝點數 3、4，A3＝點數 5、6。A1、A2、A3 是否為樣本空間的一個分割？");
+      tlines.push("解：三者兩兩交集為空，聯集＝全部點數 1～6＝S，兩條件都滿足，是分割。");
+      tlines.push("目前 " + ML.wrap(ML.sub(ML.mi("A"), ML.mn("1")) + ML.mo("=")) + " " + setStr(a1) + "、" +
+        ML.wrap(ML.sub(ML.mi("A"), ML.mn("2")) + ML.mo("=")) + " " + setStr(a2) + "、" +
+        ML.wrap(ML.sub(ML.mi("A"), ML.mn("3")) + ML.mo("=")) + " " + setStr(a3) + "。");
+      tlines.push("條件 (1) 聯集：" + ML.wrap(ML.sub(ML.mi("A"), ML.mn("1")) + ML.mo("∪") + ML.sub(ML.mi("A"), ML.mn("2")) + ML.mo("∪") + ML.sub(ML.mi("A"), ML.mn("3"))) +
+        "＝{" + unionArr.join("、") + "}" + (unionOK ? "＝S，成立。" : "，缺了點數 " + missing.join("、") + "，不成立。"));
+      tlines.push("條件 (2) 交集：" + ML.wrap(ML.sub(ML.mi("A"), ML.mi("i")) + ML.mo("∩") + ML.sub(ML.mi("A"), ML.mi("j")) + ML.mo("=") + ML.mi("∅")) +
+        "：A1∩A2＝" + setStr(i12) + "、A1∩A3＝" + setStr(i13) + "、A2∩A3＝" + setStr(i23) +
+        (disjointOK ? "，兩兩交集都為空，成立。" : "，有重疊的點數，不成立。"));
+      tlines.push(isPart ? "兩條件都滿足，目前這組事件是樣本空間的一個分割。" : "兩條件不都滿足，目前這組事件不是分割；把切點二調大、讓 A1 與 A3 不再重疊就會是分割。");
+      el("c15u2-stepsBox").innerHTML = tlines.join("<br>");
+      el("c15u2-readOut").innerHTML =
+        stat(ML.wrap(ML.sub(ML.mi("A"), ML.mn("1"))), setStr(a1)) +
+        stat(ML.wrap(ML.sub(ML.mi("A"), ML.mn("2"))), setStr(a2)) +
+        stat(ML.wrap(ML.sub(ML.mi("A"), ML.mn("3"))), setStr(a3)) +
+        stat(ML.wrap(ML.mi("分割")), isPart ? "是分割" : "不是分割", isPart);
+    } else if (S.mode === "bayes2") {
+      var num = S.prev * S.sens;
+      var den = num + (1 - S.prev) * S.fpr;
+      var post = den > 0 ? num / den : 0;
+      var numI = Math.round(num * 1000000), denI = Math.round(den * 1000000);
+      el("c15u2-eqLine").innerHTML = ML.wrap(condML("A", "B") + ML.mo("=") +
+        ML.frac(ML.mi("P") + ML.mo("(") + ML.mi("A") + ML.mo(")") + ML.mi("P") + ML.mo("(") + ML.mi("B") + ML.mo("|") + ML.mi("A") + ML.mo(")"),
+          ML.mi("P") + ML.mo("(") + ML.mi("A") + ML.mo(")") + ML.mi("P") + ML.mo("(") + ML.mi("B") + ML.mo("|") + ML.mi("A") + ML.mo(")") + ML.mo("+") +
+          ML.mi("P") + ML.mo("(") + ML.sup(ML.mi("A"), ML.mo("′")) + ML.mo(")") + ML.mi("P") + ML.mo("(") + ML.mi("B") + ML.mo("|") + ML.sup(ML.mi("A"), ML.mo("′")) + ML.mo(")"))) +
+        " ＝ " + ML.wrap(fracML(numI, denI) + ML.mo("=") + decML(post));
+      var blines = [];
+      blines.push("字卡例：某疾病盛行率 1%。檢驗時，有病者呈陽性的機率 99%，無病者呈陽性的機率 5%。隨機一人檢驗呈陽性，求他真的有病的機率。");
+      blines.push("解：分子＝0.01×0.99＝" + ML.wrap(decML(0.0099)) + "；分母＝0.0099＋0.99×0.05＝" +
+        ML.wrap(decML(0.0594)) + "，故機率＝" + ML.wrap(fracML(99, 594) + ML.mo("=") + decML(1 / 6)) + "。");
+      blines.push("目前分子 P(A)P(B|A)＝" + ML.wrap(decML(S.prev) + ML.mo("×") + decML(S.sens) + ML.mo("=") + decML(num)) + "；");
+      blines.push("分母＝" + ML.wrap(decML(num) + ML.mo("+") + decML(1 - S.prev) + ML.mo("×") + decML(S.fpr) + ML.mo("=") + decML(den)) + "，故 " +
+        ML.wrap(condML("A", "B") + ML.mo("=") + fracML(numI, denI) + ML.mo("=") + decML(post)) + "。");
+      blines.push("貝氏定理（兩部分分割）：把 S 分割成 A 與 A′，用「先驗 × 條件」反推「結果已知時原因的機率」。");
+      el("c15u2-stepsBox").innerHTML = blines.join("<br>");
+      el("c15u2-readOut").innerHTML =
+        stat(ML.wrap(ML.mi("P") + ML.mo("(") + ML.mi("A") + ML.mo(")") + ML.mo("盛行率")), fmt(S.prev)) +
+        stat(ML.wrap(ML.mi("P") + ML.mo("(") + ML.mi("B") + ML.mo("|") + ML.mi("A") + ML.mo(")")), fmt(S.sens)) +
+        stat(ML.wrap(ML.mi("P") + ML.mo("(") + ML.mi("B") + ML.mo("|") + ML.sup(ML.mi("A"), ML.mo("′")) + ML.mo(")")), fmt(S.fpr)) +
+        stat(ML.wrap(condML("A", "B")), fmt(post) + "（＝" + fracStr(numI, denI) + "）", true);
+    } else if (S.mode === "bayesG") {
+      var shares = [0.5, 0.3, 0.2], defs = [S.dA, S.dB, S.dC];
+      var cA = shares[0] * defs[0], cB = shares[1] * defs[1], cC = shares[2] * defs[2];
+      var totD = cA + cB + cC;
+      var postB = totD > 0 ? cB / totD : 0;
+      var cBI = Math.round(cB * 1000000), totI = Math.round(totD * 1000000);
+      el("c15u2-eqLine").innerHTML = ML.wrap(ML.mi("P") + ML.mo("(") + ML.sub(ML.mi("A"), ML.mn("2")) + ML.mo("|") + ML.mi("B") + ML.mo(")") + ML.mo("=") +
+        ML.frac(ML.mi("P") + ML.mo("(") + ML.sub(ML.mi("A"), ML.mn("2")) + ML.mo(")") + ML.mi("P") + ML.mo("(") + ML.mi("B") + ML.mo("|") + ML.sub(ML.mi("A"), ML.mn("2")) + ML.mo(")"),
+          '<munderover><mo>∑</mo><mrow><mi>k</mi><mo>=</mo><mn>1</mn></mrow><mn>3</mn></munderover>' + ML.mi("P") + ML.mo("(") + ML.sub(ML.mi("A"), ML.mi("k")) + ML.mo(")") + ML.mi("P") + ML.mo("(") + ML.mi("B") + ML.mo("|") + ML.sub(ML.mi("A"), ML.mi("k")) + ML.mo(")"))) +
+        " ＝ " + ML.wrap(fracML(cBI, totI) + ML.mo("=") + decML(postB));
+      var glines = [];
+      glines.push("字卡例：甲、乙、丙三台機器產量依序占 50%、30%、20%，不良率依序為 1%、2%、3%。隨機取一件發現是不良品，求它來自乙機器的機率。");
+      glines.push("解：乙的部分＝0.3×0.02＝" + ML.wrap(decML(0.006)) + "；分母＝0.5×0.01＋0.3×0.02＋0.2×0.03＝" +
+        ML.wrap(decML(0.017)) + "，故機率＝" + ML.wrap(fracML(6, 17) + ML.mo("=") + decML(6 / 17)) + "。");
+      glines.push("目前甲的貢獻＝" + ML.wrap(decML(0.5) + ML.mo("×") + decML(S.dA) + ML.mo("=") + decML(cA)) +
+        "，乙的貢獻＝" + ML.wrap(decML(0.3) + ML.mo("×") + decML(S.dB) + ML.mo("=") + decML(cB)) +
+        "，丙的貢獻＝" + ML.wrap(decML(0.2) + ML.mo("×") + decML(S.dC) + ML.mo("=") + decML(cC)) + "。");
+      glines.push("分母＝" + ML.wrap(decML(cA) + ML.mo("+") + decML(cB) + ML.mo("+") + decML(cC) + ML.mo("=") + decML(totD)) +
+        "，故 P(乙|不良)＝" + ML.wrap(fracML(cBI, totI) + ML.mo("=") + decML(postB)) + "。");
+      glines.push("貝氏定理（一般式）：分母是全部 k 個分割的 P(Ak)P(B|Ak) 之和，分子只取第 j 個。");
+      el("c15u2-stepsBox").innerHTML = glines.join("<br>");
+      el("c15u2-readOut").innerHTML =
+        stat(ML.wrap(ML.mi("甲貢獻")), fmt(cA)) +
+        stat(ML.wrap(ML.mi("乙貢獻")), fmt(cB)) +
+        stat(ML.wrap(ML.mi("丙貢獻")), fmt(cC)) +
+        stat(ML.wrap(ML.mi("P") + ML.mo("(") + ML.mi("乙") + ML.mo("|") + ML.mi("不良") + ML.mo(")")), fmt(postB) + "（＝" + fracStr(cBI, totI) + "）", true);
+    }
+    draw();
+  }
+  function fracStr(n, d) {
+    if (d < 0) { n = -n; d = -d; }
+    var g = gcd(Math.round(n), Math.round(d)); n = Math.round(n) / g; d = Math.round(d) / g;
+    if (d === 1) return fmt(n, 0);
+    return fmt(n, 0) + "/" + fmt(d, 0);
+  }
+  var btns = document.querySelectorAll("[data-c15u2-mode]");
+  for (var b = 0; b < btns.length; b++) {
+    btns[b].addEventListener("click", function () {
+      for (var k = 0; k < btns.length; k++) btns[k].classList.remove("active");
+      this.classList.add("active");
+      S.mode = this.getAttribute("data-c15u2-mode");
+      update();
+    });
+  }
+  el("c15u2-rgB").addEventListener("input", function () { S.nB = parseInt(this.value, 10); if (S.nAB > S.nB) S.nAB = S.nB; update(); });
+  el("c15u2-rgAB").addEventListener("input", function () { S.nAB = parseInt(this.value, 10); if (S.nAB > S.nB) S.nAB = S.nB; update(); });
+  el("c15u2-rgP1").addEventListener("input", function () { S.p1 = parseFloat(this.value); update(); });
+  el("c15u2-rgP2").addEventListener("input", function () { S.p2 = parseFloat(this.value); update(); });
+  el("c15u2-rgQ2").addEventListener("input", function () { S.q2 = parseFloat(this.value); update(); });
+  el("c15u2-rgR2").addEventListener("input", function () { S.r2 = parseFloat(this.value); update(); });
+  el("c15u2-rgRed").addEventListener("input", function () { S.red = parseInt(this.value, 10); update(); });
+  el("c15u2-rgWhite").addEventListener("input", function () { S.white = parseInt(this.value, 10); update(); });
+  el("c15u2-rgC1").addEventListener("input", function () { S.c1 = parseInt(this.value, 10); update(); });
+  el("c15u2-rgC2").addEventListener("input", function () { S.c2 = parseInt(this.value, 10); update(); });
+  el("c15u2-rgPrev").addEventListener("input", function () { S.prev = parseFloat(this.value); update(); });
+  el("c15u2-rgSens").addEventListener("input", function () { S.sens = parseFloat(this.value); update(); });
+  el("c15u2-rgFpr").addEventListener("input", function () { S.fpr = parseFloat(this.value); update(); });
+  el("c15u2-rgDA").addEventListener("input", function () { S.dA = parseFloat(this.value); update(); });
+  el("c15u2-rgDB").addEventListener("input", function () { S.dB = parseFloat(this.value); update(); });
+  el("c15u2-rgDC").addEventListener("input", function () { S.dC = parseFloat(this.value); update(); });
+  var rzT = null;
+  window.addEventListener("resize", function () { clearTimeout(rzT); rzT = setTimeout(draw, 120); });
+  update();
+})();
+  })();
+
+  /* ===== c15u3 獨立事件實驗室 ===== */
+  (function () {
+"use strict";
+/* ===== 純數學函數（可單獨測試） ===== */
+function fmt(n, d) {
+  if (d === undefined) d = 4;
+  if (!isFinite(n)) return "∞";
+  var s = n.toFixed(d);
+  if (s.indexOf(".") >= 0) s = s.replace(/0+$/, "").replace(/\.$/, "");
+  if (s === "-0") s = "0";
+  return s.replace(/-/g, "−");
+}
+/* ===== /純數學函數 ===== */
+/* ===== MathML 小幫手（只負責顯示，不動數學） ===== */
+function mMi(s) { return '<mi>' + s + '</mi>'; }
+function mMo(s) { return '<mo>' + s + '</mo>'; }
+function mMn(s) { return '<mn>' + String(s) + '</mn>'; }
+function mFrac(a, b) { return '<mfrac><mn>' + a + '</mn><mn>' + b + '</mn></mfrac>'; }
+function mWrap(s) { return '<math>' + s + '</math>'; }
+function pOf(inner) { return '<mi>P</mi><mo>(</mo>' + inner + '<mo>)</mo>'; }
+function pNum(x) { return mMn(fmt(x)); }
+(function () {
+  var A = '<mi>A</mi>', B = '<mi>B</mi>', C = '<mi>C</mi>';
+  var CAP = '<mo>∩</mo>', CUP = '<mo>∪</mo>', EQ = '<mo>=</mo>', TIMES = '<mo>×</mo>';
+  var DOT = '<mo>·</mo>', PRIME = '<mo>′</mo>', NEQ = '<mo>≠</mo>';
+  var S = { mode: "def", a: 0.5, b: 0.3, p: 0.15, c: 0.5, n: 2, ca: true, cb: false, cc: true };
+  var cv = document.getElementById("c15u3-cvInd");
+  var ctx = null;
+  function el(id) { return document.getElementById(id); }
+  function fit() {
+    var dpr = window.devicePixelRatio || 1;
+    var w = cv.clientWidth, h = cv.clientHeight;
+    if (!w || !h) return null;
+    var W = Math.round(w * dpr), H = Math.round(h * dpr);
+    if (cv.width !== W || cv.height !== H) { cv.width = W; cv.height = H; }
+    ctx = cv.getContext("2d");
+    if (!ctx) return null;
+    ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+    return { w: w, h: h };
+  }
+  function pal() {
+    var cs = getComputedStyle(document.documentElement);
+    function v(n) { return cs.getPropertyValue(n).trim(); }
+    return { ink: v("--ink"), soft: v("--ink-soft"), line: v("--line"), brand: v("--brand"), pink: v("--pink"), orange: v("--orange"), green: v("--green"), violet: v("--violet") };
+  }
+  function bar(x, y, w, h, frac, color, label) {
+    ctx.fillStyle = "#e8e2d2";
+    ctx.fillRect(x, y, w, h);
+    ctx.fillStyle = color;
+    ctx.fillRect(x, y, Math.max(0, Math.min(1, frac)) * w, h);
+    ctx.strokeStyle = pal().line;
+    ctx.strokeRect(x, y, w, h);
+    ctx.fillStyle = pal().ink;
+    ctx.font = "700 14px sans-serif";
+    ctx.textAlign = "left";
+    ctx.textBaseline = "middle";
+    ctx.fillText(label, x, y - 12);
+  }
+  function draw() {
+    var wh = fit();
+    if (!wh || !ctx) return;
+    var w = wh.w, h = wh.h, P = pal();
+    ctx.clearRect(0, 0, w, h);
+    ctx.font = "700 14px sans-serif";
+    ctx.textAlign = "left";
+    ctx.textBaseline = "middle";
+    var bx = 30, bw = w - 60;
+    if (S.mode === "def") {
+      var prod = S.a * S.b;
+      bar(bx, 70, bw, 34, prod, P.green, "P(A)·P(B) = " + fmt(prod));
+      bar(bx, 170, bw, 34, S.p, P.brand, "P(A∩B) = " + fmt(S.p));
+      ctx.fillStyle = Math.abs(prod - S.p) < 1e-9 ? P.green : P.pink;
+      ctx.font = "700 17px sans-serif";
+      ctx.fillText(Math.abs(prod - S.p) < 1e-9 ? "兩條一樣長：等號成立，是獨立事件" : "兩條不一樣長：等號不成立，是相關事件", bx, 260);
+    } else if (S.mode === "cond") {
+      bar(bx, 70, bw, 34, S.a, P.green, "P(A) = " + fmt(S.a));
+      bar(bx, 170, bw, 34, S.a, P.brand, "P(A|B) = P(A∩B) / P(B) = " + fmt(S.a));
+      ctx.fillStyle = P.green;
+      ctx.font = "700 17px sans-serif";
+      ctx.fillText("B 發生與否，A 的機率不變：互不影響", bx, 260);
+    } else if (S.mode === "comp") {
+      var q = [[S.a * S.b, S.a * (1 - S.b)], [(1 - S.a) * S.b, (1 - S.a) * (1 - S.b)]];
+      var labels = [["P(A∩B)", "P(A∩B′)"], ["P(A′∩B)", "P(A′∩B′)"]];
+      var cols = [P.brand, P.violet];
+      var cw = (w - 60) / 2, chh = 110;
+      for (var r = 0; r < 2; r++) {
+        for (var cc = 0; cc < 2; cc++) {
+          var x = 30 + cc * cw, y = 40 + r * (chh + 16);
+          ctx.fillStyle = "#e8e2d2";
+          ctx.fillRect(x, y, cw - 8, chh);
+          ctx.fillStyle = cols[cc];
+          ctx.globalAlpha = 0.25 + 0.75 * q[r][cc];
+          ctx.fillRect(x, y, cw - 8, chh);
+          ctx.globalAlpha = 1;
+          ctx.strokeStyle = P.line;
+          ctx.strokeRect(x, y, cw - 8, chh);
+          ctx.fillStyle = P.ink;
+          ctx.fillText(labels[r][cc] + " = " + fmt(q[r][cc]), x + 10, y + chh / 2);
+        }
+      }
+      ctx.fillStyle = P.ink;
+      ctx.font = "700 15px sans-serif";
+      ctx.fillText("四格機率和 = 1，任一格換成餘事件仍獨立", 30, 290);
+    } else if (S.mode === "three") {
+      var pa = S.ca ? 1 - S.a : S.a, pb = S.cb ? 1 - S.b : S.b, pc = S.cc ? 1 - S.c : S.c;
+      bar(bx, 50, bw, 30, pa, P.brand, (S.ca ? "P(A′)" : "P(A)") + " = " + fmt(pa));
+      bar(bx, 130, bw, 30, pb, P.violet, (S.cb ? "P(B′)" : "P(B)") + " = " + fmt(pb));
+      bar(bx, 210, bw, 30, pc, P.orange, (S.cc ? "P(C′)" : "P(C)") + " = " + fmt(pc));
+      ctx.fillStyle = P.ink;
+      ctx.font = "700 15px sans-serif";
+      ctx.fillText("三者相乘 = " + fmt(pa * pb * pc) + "，7 種換餘事件的組合都仍獨立", bx, 280);
+    } else if (S.mode === "mutex") {
+      ctx.strokeStyle = P.brand;
+      ctx.lineWidth = 3;
+      ctx.beginPath(); ctx.arc(w * 0.30, 140, 62, 0, Math.PI * 2); ctx.stroke();
+      ctx.strokeStyle = P.pink;
+      ctx.beginPath(); ctx.arc(w * 0.70, 140, 62, 0, Math.PI * 2); ctx.stroke();
+      ctx.lineWidth = 1;
+      ctx.fillStyle = P.ink;
+      ctx.textAlign = "center";
+      ctx.fillText("A", w * 0.30, 140);
+      ctx.fillText("B", w * 0.70, 140);
+      ctx.fillText("兩圓不相交：A∩B = ∅，不能同時發生", w / 2, 250);
+      bar(bx, 275, bw, 26, Math.min(1, S.a + S.b), P.green, "P(A∪B) = P(A) + P(B) = " + fmt(S.a + S.b));
+    } else if (S.mode === "diff") {
+      var prod2 = S.a * S.b;
+      ctx.textAlign = "center";
+      ctx.strokeStyle = P.brand; ctx.lineWidth = 3;
+      ctx.beginPath(); ctx.arc(w * 0.22, 110, 48, 0, Math.PI * 2); ctx.stroke();
+      ctx.strokeStyle = P.pink;
+      ctx.beginPath(); ctx.arc(w * 0.42, 110, 48, 0, Math.PI * 2); ctx.stroke();
+      ctx.lineWidth = 1;
+      ctx.fillStyle = P.ink;
+      ctx.fillText("互斥：交集 0", w * 0.32, 190);
+      ctx.strokeStyle = P.brand; ctx.lineWidth = 3;
+      ctx.beginPath(); ctx.arc(w * 0.66, 110, 48, 0, Math.PI * 2); ctx.stroke();
+      ctx.strokeStyle = P.pink;
+      ctx.beginPath(); ctx.arc(w * 0.80, 110, 48, 0, Math.PI * 2); ctx.stroke();
+      ctx.lineWidth = 1;
+      ctx.fillText("獨立：交集 " + fmt(prod2), w * 0.73, 190);
+      ctx.fillText("互斥看「能不能同時發生」，獨立看「會不會互相影響」", w / 2, 250);
+    } else if (S.mode === "app") {
+      var qq = 1 - S.a, none = Math.pow(qq, S.n), atLeast = 1 - none;
+      bar(bx, 70, bw, 34, none, P.pink, "全部不中 P = " + fmt(none));
+      bar(bx, 170, bw, 34, atLeast, P.green, "至少命中一次 P = " + fmt(atLeast));
+      ctx.fillStyle = P.ink;
+      ctx.font = "700 16px sans-serif";
+      ctx.fillText("射 " + S.n + " 次，至少中一次的機率 " + fmt(atLeast), bx, 260);
+    }
+  }
+  function render() {
+    var eq = "", steps = "", read = "", tip = "";
+    if (S.mode === "def") {
+      var prod = S.a * S.b;
+      var ind = Math.abs(prod - S.p) < 1e-9;
+      eq = mWrap(pOf(A + CAP + B) + EQ + pNum(S.p)) + "　對照　" + mWrap(pOf(A) + DOT + pOf(B) + EQ + pNum(prod));
+      steps = "字卡例：已知 P(A)=" + mWrap(mFrac(1, 2)) + "、P(B)=" + mWrap(mFrac(1, 3)) + "、P(A∩B)=" + mWrap(mFrac(1, 6)) + "\n"
+        + mWrap(pOf(A) + DOT + pOf(B) + EQ + mFrac(1, 2) + TIMES + mFrac(1, 3) + EQ + mFrac(1, 6) + EQ + pOf(A + CAP + B)) + "，等號成立，所以 A、B 獨立。\n"
+        + "現在的滑桿值：\n"
+        + mWrap(pOf(A) + DOT + pOf(B) + EQ + pNum(S.a) + TIMES + pNum(S.b) + EQ + pNum(prod)) + "\n"
+        + mWrap(pOf(A + CAP + B) + EQ + pNum(S.p)) + "\n"
+        + "判定：" + (ind ? "兩式相等，A、B 是獨立事件。" : "兩式不相等，A、B 是相關事件（相依事件）。");
+      read = '<span class="stat"><b>判定</b>' + mWrap(pOf(A + CAP + B) + EQ + pOf(A) + DOT + pOf(B)) + (ind ? " 成立：獨立事件" : " 不成立：相關事件") + '</span>'
+        + '<span class="stat"><b>P(A)·P(B)</b>' + mWrap(pNum(prod)) + '</span>'
+        + '<span class="stat"><b>P(A∩B)</b>' + mWrap(pNum(S.p)) + '</span>';
+      tip = "<b>觀念提示：</b>獨立就是「交集的機率等於機率相乘」；等號不成立就是相關事件。";
+    } else if (S.mode === "cond") {
+      var pab = S.a * S.b;
+      var pAgB = pab / S.b, pBgA = pab / S.a;
+      eq = mWrap(pOf(A + '<mo>|</mo>' + B) + EQ + mWrap(pOf(A + CAP + B)) + '<mo>/</mo>' + mWrap(pOf(B)) + EQ + pNum(pAgB)) + "　" + mWrap(pOf(A) + EQ + pNum(S.a));
+      steps = "字卡例：投擲一枚公正硬幣兩次，A＝第一次正面、B＝第二次正面。\n"
+        + "P(A)=" + mWrap(mFrac(1, 2)) + "；" + mWrap(pOf(A + CAP + B) + EQ + mFrac(1, 4)) + "；\n"
+        + mWrap(pOf(A + '<mo>|</mo>' + B) + EQ + mFrac(1, 4) + '<mo>/</mo>' + mFrac(1, 2) + EQ + mFrac(1, 2) + EQ + pOf(A)) + "，故兩次投擲互不影響。\n"
+        + "現在的滑桿值（假設 A、B 獨立）：\n"
+        + mWrap(pOf(A + '<mo>|</mo>' + B) + EQ + pNum(pab) + '<mo>/</mo>' + pNum(S.b) + EQ + pNum(pAgB) + EQ + pOf(A)) + "\n"
+        + mWrap(pOf(B + '<mo>|</mo>' + A) + EQ + pNum(pab) + '<mo>/</mo>' + pNum(S.a) + EQ + pNum(pBgA) + EQ + pOf(B)) + "\n"
+        + "三式互為充要條件：一事件發生與否，不影響另一事件的機率。";
+      read = '<span class="stat"><b>P(A|B)</b>' + mWrap(pNum(pAgB)) + '</span>'
+        + '<span class="stat"><b>P(A)</b>' + mWrap(pNum(S.a)) + '</span>'
+        + '<span class="stat"><b>P(B|A)</b>' + mWrap(pNum(pBgA)) + '</span>'
+        + '<span class="stat"><b>P(B)</b>' + mWrap(pNum(S.b)) + '</span>'
+        + '<span class="stat hot"><b>結論</b>' + mWrap(pOf(A + '<mo>|</mo>' + B) + EQ + pOf(A)) + " 互不影響" + '</span>';
+      tip = "<b>觀念提示：</b>知道 B 發生後，A 的機率還是原來的 P(A)，就是獨立；條件機率沒有變，才叫互不影響。";
+    } else if (S.mode === "comp") {
+      var pAB = S.a * S.b, pABc = S.a * (1 - S.b), pAcB = (1 - S.a) * S.b, pAcBc = (1 - S.a) * (1 - S.b);
+      eq = mWrap(pOf(A + PRIME + CAP + B + PRIME) + EQ + '<mo>(</mo>' + mMn(1) + '<mo>−</mo>' + pNum(S.a) + '<mo>)</mo>' + TIMES + '<mo>(</mo>' + mMn(1) + '<mo>−</mo>' + pNum(S.b) + '<mo>)</mo>' + EQ + pNum(pAcBc));
+      steps = "字卡例：甲、乙射擊命中率各為 0.6、0.7，兩人獨立各射一發，求兩人都沒命中的機率。\n"
+        + "A′ 與 B′ 仍獨立，機率＝" + mWrap('<mo>(</mo>' + mMn(1) + '<mo>−</mo>' + mMn("0.6") + '<mo>)</mo>' + TIMES + '<mo>(</mo>' + mMn(1) + '<mo>−</mo>' + mMn("0.7") + '<mo>)</mo>' + EQ + mMn("0.4") + TIMES + mMn("0.3") + EQ + mMn("0.12")) + "。\n"
+        + "現在的滑桿值（A、B 獨立）：\n"
+        + mWrap(pOf(A + CAP + B) + EQ + pNum(pAB)) + "　" + mWrap(pOf(A + CAP + B + PRIME) + EQ + pNum(pABc)) + "\n"
+        + mWrap(pOf(A + PRIME + CAP + B) + EQ + pNum(pAcB)) + "　" + mWrap(pOf(A + PRIME + CAP + B + PRIME) + EQ + pNum(pAcBc)) + "\n"
+        + "四格機率和＝1；A 與 B′、A′ 與 B、A′ 與 B′ 也都是獨立的。";
+      read = '<span class="stat"><b>P(A∩B)</b>' + mWrap(pNum(pAB)) + '</span>'
+        + '<span class="stat"><b>P(A∩B′)</b>' + mWrap(pNum(pABc)) + '</span>'
+        + '<span class="stat"><b>P(A′∩B)</b>' + mWrap(pNum(pAcB)) + '</span>'
+        + '<span class="stat hot"><b>P(A′∩B′)</b>' + mWrap(pNum(pAcBc)) + '</span>';
+      tip = "<b>觀念提示：</b>A、B 獨立時，把其中一個換成餘事件，仍然獨立；四種組合的機率加起來是 1。";
+    } else if (S.mode === "three") {
+      var pa3 = S.ca ? 1 - S.a : S.a, pb3 = S.cb ? 1 - S.b : S.b, pc3 = S.cc ? 1 - S.c : S.c;
+      var val3 = pa3 * pb3 * pc3;
+      var ev3 = (S.ca ? A + PRIME : A) + CAP + (S.cb ? B + PRIME : B) + CAP + (S.cc ? C + PRIME : C);
+      eq = mWrap(pOf(ev3) + EQ + pNum(pa3) + TIMES + pNum(pb3) + TIMES + pNum(pc3) + EQ + pNum(val3));
+      steps = "字卡例：設 A、B、C 獨立且機率都是 " + mWrap(mFrac(1, 2)) + "，求 P(A′∩B∩C′)。\n"
+        + "A′、B、C′ 仍獨立，機率＝" + mWrap(mFrac(1, 2) + TIMES + mFrac(1, 2) + TIMES + mFrac(1, 2) + EQ + mFrac(1, 8)) + "。\n"
+        + "現在的勾選（" + (S.ca ? "A′" : "A") + "∩" + (S.cb ? "B′" : "B") + "∩" + (S.cc ? "C′" : "C") + "）：\n"
+        + mWrap(pOf(ev3) + EQ + pNum(pa3) + TIMES + pNum(pb3) + TIMES + pNum(pc3) + EQ + pNum(val3)) + "\n"
+        + "把其中任一或任幾個換成餘事件，三事件仍然獨立，換法共 "
+        + mWrap('<msup><mn>2</mn><mn>3</mn></msup><mo>−</mo><mn>1</mn><mo>=</mo><mn>7</mn>') + " 種。";
+      read = '<span class="stat"><b>勾選的組合</b>' + mWrap(pOf(ev3)) + '</span>'
+        + '<span class="stat"><b>機率</b>' + mWrap(pNum(val3)) + '</span>'
+        + '<span class="stat hot"><b>換法</b>' + mWrap('<msup><mn>2</mn><mn>3</mn></msup><mo>−</mo><mn>1</mn><mo>=</mo><mn>7</mn>') + " 種都仍獨立" + '</span>';
+      tip = "<b>觀念提示：</b>三事件獨立時，任意換上餘事件還是獨立；全部 8 種組合裡除了原來的三個，另有 7 種換法。";
+    } else if (S.mode === "mutex") {
+      var union = S.a + S.b;
+      eq = mWrap(pOf(A + CUP + B) + EQ + pOf(A) + '<mo>+</mo>' + pOf(B) + EQ + pNum(union)) + "　" + mWrap(pOf(A + CAP + B) + EQ + mMn(0));
+      steps = "字卡例：擲一顆公正骰子，A＝出現 1 點、B＝出現 6 點，求 P(A∪B)。\n"
+        + "A、B 不能同時發生，是互斥事件，故 " + mWrap(pOf(A + CUP + B) + EQ + mFrac(1, 6) + '<mo>+</mo>' + mFrac(1, 6) + EQ + mFrac(1, 3)) + "。\n"
+        + "現在的滑桿值（A、B 互斥）：\n"
+        + mWrap(pOf(A + CUP + B) + EQ + pNum(S.a) + '<mo>+</mo>' + pNum(S.b) + EQ + pNum(union)) + "\n"
+        + mWrap(pOf(A + CAP + B) + EQ + mMn(0)) + "，交集為空集合。";
+      read = '<span class="stat"><b>P(A∪B)</b>' + mWrap(pNum(union)) + '</span>'
+        + '<span class="stat"><b>P(A∩B)</b>' + mWrap(mMn(0)) + '</span>'
+        + '<span class="stat hot"><b>判定</b>互斥事件：不能同時發生</span>';
+      tip = "<b>觀念提示：</b>互斥是「不能同時發生」，交集是空集合，聯集機率直接相加。";
+    } else if (S.mode === "diff") {
+      var prod6 = S.a * S.b;
+      eq = mWrap(pOf(A + CAP + B) + EQ + mMn(0)) + "（互斥）　對照　" + mWrap(pOf(A) + DOT + pOf(B) + EQ + pNum(prod6)) + "（獨立時的交集）";
+      steps = "字卡例：事件 A、B 互斥，且 P(A)=0.3、P(B)=0.4。A、B 有可能獨立嗎？\n"
+        + "互斥 → " + mWrap(pOf(A + CAP + B) + EQ + mMn(0)) + "；但 " + mWrap(pOf(A) + DOT + pOf(B) + EQ + mMn("0.3") + TIMES + mMn("0.4") + EQ + mMn("0.12") + NEQ + mMn(0)) + "，兩者不相等，故不可能獨立。\n"
+        + "現在的滑桿值：互斥時交集＝0；若要獨立，交集必須是\n"
+        + mWrap(pOf(A) + DOT + pOf(B) + EQ + pNum(S.a) + TIMES + pNum(S.b) + EQ + pNum(prod6)) + "\n"
+        + "結論：機率都大於 0 的互斥事件必不獨立；獨立與互斥不存在因果關係，不可混為一談。";
+      read = '<span class="stat"><b>互斥時 P(A∩B)</b>' + mWrap(mMn(0)) + '</span>'
+        + '<span class="stat"><b>獨立時 P(A∩B)</b>' + mWrap(pNum(prod6)) + '</span>'
+        + '<span class="stat hot"><b>結論</b>不可能獨立</span>';
+      tip = "<b>觀念提示：</b>互斥講的是「能不能同時發生」，獨立講的是「會不會互相影響」；兩個概念不要混在一起。";
+    } else if (S.mode === "app") {
+      var q7 = 1 - S.a, none7 = Math.pow(q7, S.n), atLeast7 = 1 - none7;
+      eq = mWrap(pOf(mMi("至少一次")) + EQ + mMn(1) + '<mo>−</mo>' + pOf(mMi("全不中")) + EQ + mMn(1) + '<mo>−</mo>' + '<msup><mrow><mo>(</mo><mn>1</mn><mo>−</mo>' + pNum(S.a) + '<mo>)</mo></mrow>' + mMn(S.n) + '</msup>' + EQ + pNum(atLeast7));
+      steps = "字卡例：某人射擊命中率 0.8，獨立射擊 2 次，求至少命中一次的機率。\n"
+        + "兩次都沒命中＝" + mWrap('<msup><mn>0.2</mn><mn>2</mn></msup><mo>=</mo><mn>0.04</mn>') + "，故至少命中一次＝" + mWrap(mMn(1) + '<mo>−</mo>' + mMn("0.04") + EQ + mMn("0.96")) + "。\n"
+        + "現在的滑桿值（命中率 p=" + fmt(S.a) + "，射 " + S.n + " 次）：\n"
+        + mWrap(pOf(mMi("全不中")) + EQ + '<msup><mrow><mo>(</mo><mn>1</mn><mo>−</mo>' + pNum(S.a) + '<mo>)</mo></mrow>' + mMn(S.n) + '</msup>' + EQ + pNum(none7)) + "\n"
+        + mWrap(pOf(mMi("至少一次")) + EQ + mMn(1) + '<mo>−</mo>' + pNum(none7) + EQ + pNum(atLeast7)) + "\n"
+        + "先用餘事件轉成「全部不發生」再相乘。";
+      read = '<span class="stat"><b>P(全不中)</b>' + mWrap(pNum(none7)) + '</span>'
+        + '<span class="stat hot"><b>P(至少一次)</b>' + mWrap(pNum(atLeast7)) + '</span>'
+        + '<span class="stat"><b>次數 n</b>' + mWrap(mMn(S.n)) + '</span>';
+      tip = "<b>觀念提示：</b>「至少一個發生」先想餘事件「全部不發生」，再用 1 去減，最省事。";
+    }
+    el("c15u3-eqLine").innerHTML = eq;
+    el("c15u3-stepsBox").innerHTML = steps;
+    el("c15u3-readOut").innerHTML = read;
+    el("c15u3-tipBox").innerHTML = tip;
+    el("c15u3-valA").textContent = fmt(S.a, 2);
+    el("c15u3-valB").textContent = fmt(S.b, 2);
+    el("c15u3-valP").textContent = fmt(S.p, 2);
+    el("c15u3-valC").textContent = fmt(S.c, 2);
+    el("c15u3-valN").textContent = fmt(S.n, 0);
+    draw();
+  }
+  function setMode(m) {
+    S.mode = m;
+    var btns = document.querySelectorAll("[data-c15u3-mode]");
+    for (var i = 0; i < btns.length; i++) {
+      if (btns[i].getAttribute("data-c15u3-mode") === m) btns[i].classList.add("active");
+      else btns[i].classList.remove("active");
+    }
+    render();
+  }
+  var modeBtns = document.querySelectorAll("[data-c15u3-mode]");
+  for (var bi = 0; bi < modeBtns.length; bi++) {
+    modeBtns[bi].addEventListener("click", function () { setMode(this.getAttribute("data-c15u3-mode")); });
+  }
+  el("c15u3-rgA").addEventListener("input", function () { S.a = parseFloat(el("c15u3-rgA").value); render(); });
+  el("c15u3-rgB").addEventListener("input", function () { S.b = parseFloat(el("c15u3-rgB").value); render(); });
+  el("c15u3-rgP").addEventListener("input", function () { S.p = parseFloat(el("c15u3-rgP").value); render(); });
+  el("c15u3-rgC").addEventListener("input", function () { S.c = parseFloat(el("c15u3-rgC").value); render(); });
+  el("c15u3-rgN").addEventListener("input", function () { S.n = parseInt(el("c15u3-rgN").value, 10); render(); });
+  el("c15u3-cbA").addEventListener("change", function () { S.ca = el("c15u3-cbA").checked; render(); });
+  el("c15u3-cbB").addEventListener("change", function () { S.cb = el("c15u3-cbB").checked; render(); });
+  el("c15u3-cbC").addEventListener("change", function () { S.cc = el("c15u3-cbC").checked; render(); });
+  window.addEventListener("resize", draw);
+  render();
 })();
   })();
     </script>
