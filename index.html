@@ -26533,9 +26533,9 @@ function phaseText(v) { return piText(v, 6); }
     if (S.mode === "basic") {
       el("c10u4-eqLine").innerHTML = ML.wrap(ML.mi("y") + ML.mo("=") + fnML + ML.mi("x") + ML.mo("，") + ML.mi("p") + ML.mo("=") + pML);
       el("c10u4-stepsBox").innerHTML =
-        "字卡例：y＝cos x 的週期為 2π；y＝tan x 的週期為 π。" +
-        "<br>sin x、cos x 的週期 p＝2π；tan x 的週期 p＝π。" +
-        "<br>切換上方函數按鈕：sin → 週期 2π；cos → 週期 2π；tan → 週期 π。";
+        "字卡例：" + ML.wrap(ML.mi("y") + ML.mo("=") + ML.mi("cos") + ML.mi("x")) + " 的週期為 " + ML.wrap(piFrac(2, 1)) + "；" + ML.wrap(ML.mi("y") + ML.mo("=") + ML.mi("tan") + ML.mi("x")) + " 的週期為 " + ML.wrap(piFrac(1, 1)) + "。" +
+        "<br>" + ML.wrap(ML.mi("sin") + ML.mi("x")) + "、" + ML.wrap(ML.mi("cos") + ML.mi("x")) + " 的週期 " + ML.wrap(ML.mi("p") + ML.mo("=") + piFrac(2, 1)) + "；" + ML.wrap(ML.mi("tan") + ML.mi("x")) + " 的週期 " + ML.wrap(ML.mi("p") + ML.mo("=") + piFrac(1, 1)) + "。" +
+        "<br>切換上方函數按鈕：sin → 週期 " + ML.wrap(piFrac(2, 1)) + "；cos → 週期 " + ML.wrap(piFrac(2, 1)) + "；tan → 週期 " + ML.wrap(piFrac(1, 1)) + "。";
       el("c10u4-readOut").innerHTML =
         stat("函數", fnName() + " x") + stat("週期", pTxt, true) + stat("sin 週期", "2π") + stat("cos 週期", "2π") + stat("tan 週期", "π");
     } else if (S.mode === "prop") {
@@ -26545,29 +26545,30 @@ function phaseText(v) { return piText(v, 6); }
       var cTerm = S.c === 0 ? "" : (S.c > 0 ? ML.mo("+") + ML.num(fmt(S.c, 1)) : ML.mo("−") + ML.num(fmt(Math.abs(S.c), 1)));
       var shiftFrac = [S.b, 6 * S.k];
       var shiftTxt = S.b === 0 ? "0（不平移）" : (S.b > 0 ? "左移 " : "右移 ") + piText(Math.abs(S.b), 6 * S.k);
+      var shiftML = S.b === 0 ? "0（不平移）" : (S.b > 0 ? "左移 " : "右移 ") + ML.wrap(piFrac(Math.abs(S.b), 6 * S.k));
       el("c10u4-eqLine").innerHTML = ML.wrap(ML.mi("y") + ML.mo("=") + aStr + ML.mi("sin") + ML.row(ML.mo("(") + kx + bTerm + ML.mo(")")) + cTerm + ML.mo("，") + ML.mi("p") + ML.mo("=") + pML);
       el("c10u4-stepsBox").innerHTML =
-        "字卡例：y＝3sin(2x＋π/3)，振幅＝|a|＝3；週期＝2π/|2|＝π（拉 a＝3、k＝2、b＝π/3 即得）。" +
-        "<br>一般式：f(x) 的週期為 p，則 af(kx＋b)＋c 的週期為 p/|k|（k≠0）。" +
-        "<br>現在：振幅 |a|＝" + fmt(Math.abs(S.a), 1) + "；週期 2π/|" + S.k + "|＝" + pTxt + "；a 管振幅、c 管上下平移、k 管橫向伸縮與週期。" +
-        "<br>左右平移：sin(kx＋b)＝sin k(x＋b/k)，圖形" + shiftTxt + "。";
+        "字卡例：" + ML.wrap(ML.mi("y") + ML.mo("=") + ML.num("3") + ML.mi("sin") + ML.row(ML.mo("(") + ML.num("2") + ML.mi("x") + ML.mo("+") + piFrac(1, 3) + ML.mo(")"))) + "，振幅 " + ML.wrap(ML.mo("|") + ML.mi("a") + ML.mo("|") + ML.mo("=") + ML.num("3")) + "；週期 " + ML.wrap(ML.mo("=") + ML.frac(piFrac(2, 1), ML.row(ML.mo("|") + ML.num("2") + ML.mo("|"))) + ML.mo("=") + piFrac(1, 1)) + "（拉 " + ML.wrap(ML.mi("a") + ML.mo("=") + ML.num("3")) + "、" + ML.wrap(ML.mi("k") + ML.mo("=") + ML.num("2")) + "、" + ML.wrap(ML.mi("b") + ML.mo("=") + piFrac(1, 3)) + " 即得）。" +
+        "<br>一般式：" + ML.wrap(ML.mi("f") + ML.row(ML.mo("(") + ML.mi("x") + ML.mo(")"))) + " 的週期為 " + ML.wrap(ML.mi("p")) + "，則 " + ML.wrap(ML.mi("a") + ML.mi("f") + ML.row(ML.mo("(") + ML.mi("k") + ML.mi("x") + ML.mo("+") + ML.mi("b") + ML.mo(")")) + ML.mo("+") + ML.mi("c")) + " 的週期為 " + ML.wrap(ML.frac(ML.mi("p"), ML.row(ML.mo("|") + ML.mi("k") + ML.mo("|")))) + "（" + ML.wrap(ML.mi("k") + ML.mo("≠") + ML.num("0")) + "）。" +
+        "<br>現在：振幅 " + ML.wrap(ML.mo("|") + ML.mi("a") + ML.mo("|") + ML.mo("=") + ML.num(fmt(Math.abs(S.a), 1))) + "；週期 " + ML.wrap(ML.frac(piFrac(2, 1), ML.row(ML.mo("|") + ML.num(String(S.k)) + ML.mo("|"))) + ML.mo("=") + pML) + "；a 管振幅、c 管上下平移、k 管橫向伸縮與週期。" +
+        "<br>左右平移：" + ML.wrap(ML.mi("sin") + ML.row(ML.mo("(") + ML.mi("k") + ML.mi("x") + ML.mo("+") + ML.mi("b") + ML.mo(")")) + ML.mo("=") + ML.mi("sin") + ML.mi("k") + ML.row(ML.mo("(") + ML.mi("x") + ML.mo("+") + ML.frac(ML.mi("b"), ML.mi("k")) + ML.mo(")"))) + "，圖形" + shiftML + "。";
       el("c10u4-readOut").innerHTML =
         stat("振幅 |a|", fmt(Math.abs(S.a), 1), true) + stat("週期", pTxt, true) + stat("上下平移 c", fmt(S.c, 1)) + stat("左右平移", shiftTxt) + stat("相位 b", phaseText(S.b));
     } else if (S.mode === "abs") {
       el("c10u4-eqLine").innerHTML = ML.wrap(ML.mi("y") + ML.mo("=") + ML.mo("|") + fnML + ML.mi("x") + ML.mo("|") + ML.mo("，") + ML.mi("p") + ML.mo("=") + pML);
       el("c10u4-stepsBox").innerHTML =
-        "字卡例：y＝|sin x| 的週期為 π；因 |sin(x＋π)|＝|−sin x|＝|sin x|，且沒有更小的正平移量。" +
-        "<br>|sin x|、|cos x|、|tan x| 的週期都是 π：取絕對值後，負半週翻到 x 軸上方，半個週期就重複一次。" +
-        "<br>切換上方函數按鈕：|sin x|、|cos x|、|tan x| 的週期都是 π。";
+        "字卡例：" + ML.wrap(ML.mi("y") + ML.mo("=") + ML.mo("|") + ML.mi("sin") + ML.mi("x") + ML.mo("|")) + " 的週期為 " + ML.wrap(piFrac(1, 1)) + "；因 " + ML.wrap(ML.mo("|") + ML.mi("sin") + ML.row(ML.mo("(") + ML.mi("x") + ML.mo("+") + piFrac(1, 1) + ML.mo(")")) + ML.mo("|") + ML.mo("=") + ML.mo("|") + ML.mo("−") + ML.mi("sin") + ML.mi("x") + ML.mo("|") + ML.mo("=") + ML.mo("|") + ML.mi("sin") + ML.mi("x") + ML.mo("|")) + "，且沒有更小的正平移量。" +
+        "<br>" + ML.wrap(ML.mo("|") + ML.mi("sin") + ML.mi("x") + ML.mo("|")) + "、" + ML.wrap(ML.mo("|") + ML.mi("cos") + ML.mi("x") + ML.mo("|")) + "、" + ML.wrap(ML.mo("|") + ML.mi("tan") + ML.mi("x") + ML.mo("|")) + " 的週期都是 " + ML.wrap(piFrac(1, 1)) + "：取絕對值後，負半週翻到 x 軸上方，半個週期就重複一次。" +
+        "<br>切換上方函數按鈕：" + ML.wrap(ML.mo("|") + ML.mi("sin") + ML.mi("x") + ML.mo("|")) + "、" + ML.wrap(ML.mo("|") + ML.mi("cos") + ML.mi("x") + ML.mo("|")) + "、" + ML.wrap(ML.mo("|") + ML.mi("tan") + ML.mi("x") + ML.mo("|")) + " 的週期都是 " + ML.wrap(piFrac(1, 1)) + "。";
       el("c10u4-readOut").innerHTML =
         stat("函數", "|" + fnName() + " x|") + stat("週期", pTxt, true) + stat("原函數週期", fnName() === "tan" ? "π" : "2π") + stat("為什麼變 π", "負半週翻上來");
     } else if (S.mode === "pow") {
       var powML = ML.sup(fnML, ML.num(String(S.n)));
       el("c10u4-eqLine").innerHTML = ML.wrap(ML.mi("y") + ML.mo("=") + powML + ML.mi("x") + ML.mo("，") + ML.mi("p") + ML.mo("=") + pML);
       el("c10u4-stepsBox").innerHTML =
-        "字卡例：y＝sin²x 是偶次型，週期為 π；y＝cos³x 是奇次型，週期為 2π（拉 n＝2、n＝3 對照）。" +
-        "<br>sin^(2n)x、cos^(2n)x、tan^(2n)x 的週期為 π；sin^(2n＋1)x、cos^(2n＋1)x 的週期為 2π；tan^(2n＋1)x 的週期為 π（n 為自然數）。" +
-        "<br>現在：" + fnName() + "^" + S.n + "x 是" + ((S.fn === "tan") ? " tan 型" : (S.n % 2 === 0 ? "偶次型" : "奇次型")) + "，週期＝" + pTxt + "。";
+        "字卡例：" + ML.wrap(ML.mi("y") + ML.mo("=") + ML.sup(ML.mi("sin"), ML.num("2")) + ML.mi("x")) + " 是偶次型，週期為 " + ML.wrap(piFrac(1, 1)) + "；" + ML.wrap(ML.mi("y") + ML.mo("=") + ML.sup(ML.mi("cos"), ML.num("3")) + ML.mi("x")) + " 是奇次型，週期為 " + ML.wrap(piFrac(2, 1)) + "（拉 " + ML.wrap(ML.mi("n") + ML.mo("=") + ML.num("2")) + "、" + ML.wrap(ML.mi("n") + ML.mo("=") + ML.num("3")) + " 對照）。" +
+        "<br>" + ML.wrap(ML.sup(ML.mi("sin"), ML.row(ML.num("2") + ML.mi("n"))) + ML.mi("x")) + "、" + ML.wrap(ML.sup(ML.mi("cos"), ML.row(ML.num("2") + ML.mi("n"))) + ML.mi("x")) + "、" + ML.wrap(ML.sup(ML.mi("tan"), ML.row(ML.num("2") + ML.mi("n"))) + ML.mi("x")) + " 的週期為 " + ML.wrap(piFrac(1, 1)) + "；" + ML.wrap(ML.sup(ML.mi("sin"), ML.row(ML.num("2") + ML.mi("n") + ML.mo("+") + ML.num("1"))) + ML.mi("x")) + "、" + ML.wrap(ML.sup(ML.mi("cos"), ML.row(ML.num("2") + ML.mi("n") + ML.mo("+") + ML.num("1"))) + ML.mi("x")) + " 的週期為 " + ML.wrap(piFrac(2, 1)) + "；" + ML.wrap(ML.sup(ML.mi("tan"), ML.row(ML.num("2") + ML.mi("n") + ML.mo("+") + ML.num("1"))) + ML.mi("x")) + " 的週期為 " + ML.wrap(piFrac(1, 1)) + "（" + ML.wrap(ML.mi("n")) + " 為自然數）。" +
+        "<br>現在：" + ML.wrap(ML.sup(fnML, ML.num(String(S.n))) + ML.mi("x")) + " 是" + ((S.fn === "tan") ? " tan 型" : (S.n % 2 === 0 ? "偶次型" : "奇次型")) + "，週期為 " + ML.wrap(pML) + "。";
       el("c10u4-readOut").innerHTML =
         stat("函數", fnName() + "^" + S.n + " x") + stat("次數 n", String(S.n)) + stat("偶次／奇次", S.fn === "tan" ? "tan 型" : (S.n % 2 === 0 ? "偶次" : "奇次")) + stat("週期", pTxt, true);
     } else if (S.mode === "sum") {
@@ -26583,11 +26584,11 @@ function phaseText(v) { return piText(v, 6); }
         }
         if (ok) smaller.push("p/" + d);
       });
-      var checkTxt = smaller.length ? "注意：數值抽查發現 " + smaller.join("、") + " 也成立，實際週期比最小公倍數更小！" : "數值抽查：p/2、p/3 皆不成立，實際週期就是 " + pTxt + "。";
+      var checkTxt = smaller.length ? "注意：數值抽查發現 " + smaller.map(function (d) { var dd = d.split("/"); return ML.wrap(ML.frac(ML.mi("p"), ML.num(dd[1]))); }).join("、") + " 也成立，實際週期比最小公倍數更小！" : "數值抽查：" + ML.wrap(ML.frac(ML.mi("p"), ML.num("2"))) + "、" + ML.wrap(ML.frac(ML.mi("p"), ML.num("3"))) + " 皆不成立，實際週期就是 " + ML.wrap(pML) + "。";
       el("c10u4-eqLine").innerHTML = ML.wrap(ML.mi("y") + ML.mo("=") + ML.mi("sin") + ML.row(ML.num(String(S.k)) + ML.mi("x")) + ML.mo("+") + ML.mi("cos") + ML.row(ML.num(String(S.m)) + ML.mi("x")) + ML.mo("，") + ML.mi("p") + ML.mo("=") + pML);
       el("c10u4-stepsBox").innerHTML =
-        "字卡例：y＝sin 2x＋cos 3x，sin 2x 的週期為 π，cos 3x 的週期為 2π/3，取最小公倍數得週期 2π（拉 k＝2、m＝3 即得）。" +
-        "<br>現在：sin " + S.k + "x 的週期＝" + piText(p1[0], p1[1]) + "；cos " + S.m + "x 的週期＝" + piText(p2[0], p2[1]) + "；最小公倍數 [p1, p2]＝2π/gcd(" + S.k + ", " + S.m + ")＝2π/" + g + "＝" + pTxt + "。" +
+        "字卡例：" + ML.wrap(ML.mi("y") + ML.mo("=") + ML.mi("sin") + ML.row(ML.num("2") + ML.mi("x")) + ML.mo("+") + ML.mi("cos") + ML.row(ML.num("3") + ML.mi("x"))) + "，" + ML.wrap(ML.mi("sin") + ML.row(ML.num("2") + ML.mi("x"))) + " 的週期為 " + ML.wrap(piFrac(1, 1)) + "，" + ML.wrap(ML.mi("cos") + ML.row(ML.num("3") + ML.mi("x"))) + " 的週期為 " + ML.wrap(piFrac(2, 3)) + "，取最小公倍數得週期 " + ML.wrap(piFrac(2, 1)) + "（拉 " + ML.wrap(ML.mi("k") + ML.mo("=") + ML.num("2")) + "、" + ML.wrap(ML.mi("m") + ML.mo("=") + ML.num("3")) + " 即得）。" +
+        "<br>現在：" + ML.wrap(ML.mi("sin") + ML.row(ML.num(String(S.k)) + ML.mi("x"))) + " 的週期 " + ML.wrap(ML.mo("=") + piFrac(p1[0], p1[1])) + "；" + ML.wrap(ML.mi("cos") + ML.row(ML.num(String(S.m)) + ML.mi("x"))) + " 的週期 " + ML.wrap(ML.mo("=") + piFrac(p2[0], p2[1])) + "；最小公倍數 " + ML.wrap(ML.mo("[") + ML.sub(ML.mi("p"), ML.num("1")) + ML.mo(",") + ML.sub(ML.mi("p"), ML.num("2")) + ML.mo("]") + ML.mo("=") + ML.frac(piFrac(2, 1), ML.row(ML.mi("gcd") + ML.row(ML.mo("(") + ML.num(String(S.k)) + ML.mo(",") + ML.num(String(S.m)) + ML.mo(")")))) + ML.mo("=") + ML.frac(piFrac(2, 1), ML.num(String(g))) + ML.mo("=") + pML) + "。" +
         "<br>" + checkTxt;
       el("c10u4-readOut").innerHTML =
         stat("sin " + S.k + "x 週期", piText(p1[0], p1[1])) + stat("cos " + S.m + "x 週期", piText(p2[0], p2[1])) + stat("最小公倍數", pTxt, true) + stat("實際週期檢查", smaller.length ? smaller.join("、") + " 也成立" : "就是 " + pTxt);
@@ -26595,18 +26596,18 @@ function phaseText(v) { return piText(v, 6); }
       var aV = S.a === 1 ? "" : S.a === -1 ? ML.mo("−") : ML.num(fmt(S.a, 1));
       el("c10u4-eqLine").innerHTML = ML.wrap(ML.mi("y") + ML.mo("=") + aV + ML.mi("sin") + ML.mi("x") + ML.mo("，") + ML.mi("振幅") + ML.mo("=") + ML.num(fmt(Math.abs(S.a), 1)));
       el("c10u4-stepsBox").innerHTML =
-        "字卡例：y＝2sin x 的圖形是 y＝sin x 鉛直伸縮 2 倍即得，振幅為 2（拉 a＝2 即得）。" +
-        "<br>y＝af(x) 的圖形由 y＝f(x) 以 x 軸為基準鉛直伸縮 a 倍得到；y＝−af(x) 再對 x 軸上下翻轉。" +
-        "<br>現在：a＝" + fmt(S.a, 1) + "，" + (S.a < 0 ? "a 為負：先伸縮 |a|＝" + fmt(Math.abs(S.a), 1) + " 倍，再上下翻轉。" : S.a === 0 ? "a＝0：圖形壓平成 y＝0。" : "圖形鉛直伸縮 " + fmt(S.a, 1) + " 倍。") + "週期仍是 2π，不變。";
+        "字卡例：" + ML.wrap(ML.mi("y") + ML.mo("=") + ML.num("2") + ML.mi("sin") + ML.mi("x")) + " 的圖形是 " + ML.wrap(ML.mi("y") + ML.mo("=") + ML.mi("sin") + ML.mi("x")) + " 鉛直伸縮 2 倍即得，振幅為 2（拉 " + ML.wrap(ML.mi("a") + ML.mo("=") + ML.num("2")) + " 即得）。" +
+        "<br>" + ML.wrap(ML.mi("y") + ML.mo("=") + ML.mi("a") + ML.mi("f") + ML.row(ML.mo("(") + ML.mi("x") + ML.mo(")"))) + " 的圖形由 " + ML.wrap(ML.mi("y") + ML.mo("=") + ML.mi("f") + ML.row(ML.mo("(") + ML.mi("x") + ML.mo(")"))) + " 以 x 軸為基準鉛直伸縮 " + ML.wrap(ML.mi("a")) + " 倍得到；" + ML.wrap(ML.mi("y") + ML.mo("=") + ML.mo("−") + ML.mi("a") + ML.mi("f") + ML.row(ML.mo("(") + ML.mi("x") + ML.mo(")"))) + " 再對 x 軸上下翻轉。" +
+        "<br>現在：" + ML.wrap(ML.mi("a") + ML.mo("=") + ML.num(fmt(S.a, 1))) + "，" + (S.a < 0 ? ML.wrap(ML.mi("a")) + " 為負：先伸縮 " + ML.wrap(ML.mo("|") + ML.mi("a") + ML.mo("|") + ML.mo("=") + ML.num(fmt(Math.abs(S.a), 1))) + " 倍，再上下翻轉。" : S.a === 0 ? ML.wrap(ML.mi("a") + ML.mo("=") + ML.num("0")) + "：圖形壓平成 " + ML.wrap(ML.mi("y") + ML.mo("=") + ML.num("0")) + "。" : "圖形鉛直伸縮 " + ML.wrap(ML.num(fmt(S.a, 1))) + " 倍。") + "週期仍是 " + ML.wrap(piFrac(2, 1)) + "，不變。";
       el("c10u4-readOut").innerHTML =
         stat("伸縮倍率 a", fmt(S.a, 1)) + stat("振幅 |a|", fmt(Math.abs(S.a), 1), true) + stat("上下翻轉", S.a < 0 ? "有" : "無") + stat("週期", "2π（不變）");
     } else {
       /* horiz */
       el("c10u4-eqLine").innerHTML = ML.wrap(ML.mi("y") + ML.mo("=") + ML.mi("sin") + ML.row(ML.num(String(S.k)) + ML.mi("x")) + ML.mo("，") + ML.mi("p") + ML.mo("=") + pML);
       el("c10u4-stepsBox").innerHTML =
-        "字卡例：y＝sin 2x 的圖形是 y＝sin x 水平伸縮為 1/2 倍，週期＝2π/2＝π（拉 k＝2 即得）。" +
-        "<br>y＝f(bx) 的圖形由 y＝f(x) 以 y 軸為基準水平伸縮為 1/b 倍得到（a、b 皆為正數）。" +
-        "<br>現在：b＝" + S.k + "，水平伸縮為 1/" + S.k + " 倍，週期＝2π/" + S.k + "＝" + pTxt + "。";
+        "字卡例：" + ML.wrap(ML.mi("y") + ML.mo("=") + ML.mi("sin") + ML.row(ML.num("2") + ML.mi("x"))) + " 的圖形是 " + ML.wrap(ML.mi("y") + ML.mo("=") + ML.mi("sin") + ML.mi("x")) + " 水平伸縮為 " + ML.wrap(ML.frac(ML.num("1"), ML.num("2"))) + " 倍，週期 " + ML.wrap(ML.mo("=") + ML.frac(piFrac(2, 1), ML.num("2")) + ML.mo("=") + piFrac(1, 1)) + "（拉 " + ML.wrap(ML.mi("k") + ML.mo("=") + ML.num("2")) + " 即得）。" +
+        "<br>" + ML.wrap(ML.mi("y") + ML.mo("=") + ML.mi("f") + ML.row(ML.mo("(") + ML.mi("b") + ML.mi("x") + ML.mo(")"))) + " 的圖形由 " + ML.wrap(ML.mi("y") + ML.mo("=") + ML.mi("f") + ML.row(ML.mo("(") + ML.mi("x") + ML.mo(")"))) + " 以 y 軸為基準水平伸縮為 " + ML.wrap(ML.frac(ML.num("1"), ML.mi("b"))) + " 倍得到（" + ML.wrap(ML.mi("a")) + "、" + ML.wrap(ML.mi("b")) + " 皆為正數）。" +
+        "<br>現在：" + ML.wrap(ML.mi("b") + ML.mo("=") + ML.num(String(S.k))) + "，水平伸縮為 " + ML.wrap(ML.frac(ML.num("1"), ML.num(String(S.k)))) + " 倍，週期 " + ML.wrap(ML.mo("=") + ML.frac(piFrac(2, 1), ML.num(String(S.k))) + ML.mo("=") + pML) + "。";
       el("c10u4-readOut").innerHTML =
         stat("頻率 b", String(S.k)) + stat("水平伸縮", "1/" + S.k) + stat("週期", pTxt, true) + stat("原週期", "2π");
     }
