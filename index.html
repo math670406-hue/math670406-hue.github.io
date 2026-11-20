@@ -144,7 +144,7 @@
         position: relative; overflow: hidden; background: #fff;
         border-bottom: 1px solid var(--line); cursor: zoom-in; padding: 0; text-align: left; width: 100%;
       }
-      .poster-frame img { display: block; width: 100%; height: auto; }
+      .poster-frame img { display: block; width: 100%; height: auto; aspect-ratio: 1240 / 1754; }
       .poster-frame.tall { height: 430px; }
       .poster-frame.tall img { height: auto; }
       .poster-frame .fade {
@@ -40892,9 +40892,9 @@ function dotML() { return vecML("a") + ML.mo("·") + vecML("b"); }
     ctx.fillText("O", cx - 12, cy + 14);
     if (showPlane) {
       ctx.beginPath();
-      ctx.moveTo(px(planePts[0][0], planePts[0][1], planePts[0][2]));
-      ctx.lineTo(px(planePts[1][0], planePts[1][1], planePts[1][2]));
-      ctx.lineTo(px(planePts[2][0], planePts[2][1], planePts[2][2]));
+      ctx.moveTo(px(planePts[0][0], planePts[0][1], planePts[0][2]), py(planePts[0][0], planePts[0][1], planePts[0][2]));
+      ctx.lineTo(px(planePts[1][0], planePts[1][1], planePts[1][2]), py(planePts[1][0], planePts[1][1], planePts[1][2]));
+      ctx.lineTo(px(planePts[2][0], planePts[2][1], planePts[2][2]), py(planePts[2][0], planePts[2][1], planePts[2][2]));
       ctx.closePath();
       ctx.fillStyle = "rgba(29,158,117,0.12)"; ctx.fill();
       ctx.strokeStyle = P.green; ctx.lineWidth = 1.5; ctx.stroke();
@@ -40904,8 +40904,8 @@ function dotML() { return vecML("a") + ML.mo("·") + vecML("b"); }
     /* 直線 L（或法線） */
     ctx.strokeStyle = P.brand; ctx.lineWidth = 2.5;
     ctx.beginPath();
-    ctx.moveTo(px(lineA[0], lineA[1], lineA[2]));
-    ctx.lineTo(px(lineB[0], lineB[1], lineB[2]));
+    ctx.moveTo(px(lineA[0], lineA[1], lineA[2]), py(lineA[0], lineA[1], lineA[2]));
+    ctx.lineTo(px(lineB[0], lineB[1], lineB[2]), py(lineB[0], lineB[1], lineB[2]));
     ctx.stroke();
     ctx.fillStyle = P.brand; ctx.font = 'bold 15px "Noto Sans TC", system-ui, sans-serif'; ctx.textAlign = "center";
     ctx.fillText(showPlane ? "法線" : "L", px(lineB[0], lineB[1], lineB[2]) + 16, py(lineB[0], lineB[1], lineB[2]) - 6);
@@ -40924,7 +40924,7 @@ function dotML() { return vecML("a") + ML.mo("·") + vecML("b"); }
       var p3 = [F[0] + r * wv[0], F[1] + r * wv[1], F[2] + r * wv[2]];
       ctx.strokeStyle = P.orange; ctx.lineWidth = 2;
       ctx.beginPath();
-      ctx.moveTo(px(p1[0], p1[1], p1[2])); ctx.lineTo(px(p2[0], p2[1], p2[2])); ctx.lineTo(px(p3[0], p3[1], p3[2]));
+      ctx.moveTo(px(p1[0], p1[1], p1[2]), py(p1[0], p1[1], p1[2])); ctx.lineTo(px(p2[0], p2[1], p2[2]), py(p2[0], p2[1], p2[2])); ctx.lineTo(px(p3[0], p3[1], p3[2]), py(p3[0], p3[1], p3[2]));
       ctx.stroke();
     }
     /* 點 A、垂足 */
